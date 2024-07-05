@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="zxx">
+{% load static %}
+   <!-- Mirrored from Century21fincs.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:01:14 GMT -->
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="author" content="Century21fincs.org Developers">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Century21fincs.org, Century21fincs.org, Century21fincs.org swap, Buy tokens, send and receive, Crypto, Receive and send, Century21fincs.org , Century21fincs.org">
+      <meta name=”robots” content=”index, follow”>
+      <!-- Links of CSS files -->
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/static/assets/css/boxicons.min.css">
+      <link rel="stylesheet" href="/static/assets/css/meanmenu.min.css">
+      <link rel="stylesheet" href="/static/assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/dark.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <title>Century21fincs.org</title>
+      <link rel="icon" type="image/png" href="/static/lionhead.png">
+   </head>
+   </head>
+   <body class="data-science-color-css">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area">
+         <div class="dibiz-responsive-nav">
+            <div class="container">
+               <div class="dibiz-responsive-menu">
+                  <div class="logo">
+                     <a href="{% url 'home' %}">
+                       <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dibiz-nav">
+            <div class="container">
+               <nav class="navbar navbar-expand-md navbar-light">
+                  <a class="navbar-brand" href="{% url 'home' %}">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                  </a>
+                  <div class="collapse navbar-collapse mean-menu">
+                     <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Company <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+                              <li class="nav-item"><a href="{% url 'stats' %}" class="nav-link">Our Stats</a></li>
+                              <li class="nav-item"><a href="{% url 'affiliates' %}" class="nav-link">Affiliate Program</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'plan' %}" class="nav-link">Plans</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'realestate' %}" class="nav-link">Real Estate</a></li>
+                              <li class="nav-item"><a href="{% url 'retirement' %}" class="nav-link">Retirement</a></li>
+                              <li class="nav-item"><a href="{% url 'forex' %}" class="nav-link">Forex</a></li>
+                              <li class="nav-item"><a href="{% url 'gold' %}" class="nav-link">Gold</a></li>
+                              <li class="nav-item"><a href="{% url 'oilandgas' %}" class="nav-link">Oil and Gas</a></li>
+                              <li class="nav-item"><a href="{% url 'crypto' %}" class="nav-link">Crypto</a></li>
+                              <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link">Portfolio Management Service</a></li>
+                              <li class="nav-item"><a href="{% url 'stocks' %}" class="nav-link">Stocks</a></li>
+                              <li class="nav-item"><a href="{% url 'agriculture' %}" class="nav-link">Agriculture</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'signin' %}" class="nav-link">Log In</a></li>
+                     </ul>
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <div class="side-menu-btn">
+                              <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                           </div>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="others-option-for-responsive">
+            <div class="container">
+               <div class="dot-menu">
+                  <div class="inner">
+                     <div class="circle circle-one"></div>
+                     <div class="circle circle-two"></div>
+                     <div class="circle circle-three"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="option-inner">
+                     <div class="others-option justify-content-center d-flex align-items-center">
+                        <div class="option-item">
+                           <div class="side-menu-btn">
+                              <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                           </div>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Navbar Area -->
+      <!-- Sidebar Modal -->
+      <div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <button type="button" class="close" data-bs-dismiss="modal"><i class='bx bx-x'></i></button>
+               <div class="modal-body">
+                  <div class="logo">
+                     <a href="{% url 'home' %}" class="d-inline-block"><img src="/static/images/cchexnew.png" alt="image"></a>
+                  </div>
+                  <div class="sidebar-contact-info">
+                     <h2>
+                        <a href="tel:+Encrypted">Encrypted</a>
+                        <span>OR</span>
+                        <a href="mailto:support@Century21fincs.org"><span class="__cf_email__" data-cfemail="442c2128282b04202d262d3e6a272b29">Email Us</span></a>
+                     </h2>
+                  </div>
+                  <ul class="social-list">
+                     <li><span>Follow Us On:</span></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Sidebar Modal -->
+      <!-- Start Main Banner Area -->
+      <section class="main-banner-area">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-8 col-md-12">
+                  <div class="main-banner-content">
+                     <span class="sub-title">What We Provide</span>
+                     <h1>For a secure and planned future</h1>
+                     <p>Century21fincs.org is one of the largest and most experienced international financial trading firms. We have an established team of professionals.
+                     Century21fincs.org is run by a team of experts who generate profits through real estate, Oil and gas, cryptocurrency, forex etc. We employ a variety of required techniques to achieve the set goals for the client. Our multi-asset investment approach is aimed at what matters helping you reach your desired outcomes.</p>
+                     <div class="btn-box">
+                        <div class="d-flex align-items-center">
+                           <a href="{% url 'signin' %}" class="default-btn">Get Started</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12">
+                  <div>
+                     <img src="/static/images/oldie.png" align = "right" alt="image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="shape1"><img src="/static/assets/img/shape/shape1.png" alt="image"></div>
+         <div class="shape2"><img src="/static/assets/img/shape/shape2.png" alt="image"></div>
+         <div class="shape3"><img src="/static/assets/img/shape/shape3.png" alt="image"></div>
+         <div class="shape4"><img src="/static/assets/img/shape/shape4.png" alt="image"></div>
+         <div class="shape5"><img src="/static/assets/img/shape/shape5.png" alt="image"></div>
+         <div class="shape6"><img src="/static/assets/img/shape/shape6.png" alt="image"></div>
+         <div class="shape7"><img src="/static/assets/img/shape/shape7.png" alt="image"></div>
+         <div class="shape8"><img src="/static/assets/img/shape/shape8.png" alt="image"></div>
+      </section>
+      <!-- End Main Banner Area -->
+      <!-- Start Team Area -->
+      <section class="team-area-two ptb-100">
+         <div class="container">
+            <div class="section-title">
+               <h2>Affiliations</h2>
+               <p>Century21fincs.org focuses on delivering comprehensive financial advise and solutions to maximise profit. Hence, we are the worlds leading choice for growth, and a secured future.</p>
+            </div>
+            <div class="team-slides owl-carousel owl-theme">
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/1check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/2check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/3check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/4check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/5check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/check6.png" alt="img">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="shape17"><img src="/static/assets/img/shape/shape17.png" alt="image"></div>
+      </section>
+      <!-- End Team Area -->
+      <!-- Start About Area -->
+      <section class="about-area pb-100">
+         <div class="container-fluid">
+            <div class="section-title">
+               <h2>Our Mission</h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-6 col-md-12">
+                  <div>
+                     <img src="/static/images/what-we-do.png" alt="image" height = "100%">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="about-content">
+                     <div class="content">
+                        <h4>We establish a secured, and constant source of income for our clients.</h4>
+                        <p >
+                           <br/>
+                           <b>Century21fincs.org </b> success depends on how faithfully we adhere to our core principles: delivering exceptional client service and acting with integrity.
+                           <br/>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End About Area -->
+      <!-- Start Featured Services Area -->
+      <section class="featured-services-area pt-100 pb-70">
+         <div class="container">
+            <div class="section-title">
+               <h2>About the Company</h2>
+            </div>
+            <div class = "row">
+               <div class="col-lg-6 col-md-12">
+                  <h2>More About Century21fincs.org</h2>
+                  <p>Century21fincs.org is a versatile investment platform that offers a wide range of investment services. Whether you are a beginner or an experienced investor, Century21fincs.org has something to offer for everyone. Here are some key features and services provided by Century21fincs.org:
+                  <br>Diversified Investment Options: Century21fincs.org provides access to various investment options, including stocks, bonds, mutual funds, exchange-traded funds (ETFs), real estate investment trusts (REITs), and more. This allows you to create a diversified portfolio that aligns with your investment goals and risk tolerance.
+                  <br>Personalized Investment Strategies: Century21fincs.org understands that every investor is unique, and their investment needs can differ significantly. That's why they offer personalized investment strategies tailored to your individual goals and preferences. Their team of experienced professionals can help you develop a customized plan that maximizes your chances of success.
+                  <br>Advanced Trading Tools: For self-directed investors, Century21fincs.org offers advanced trading tools and technology to enhance your trading experience. These tools can include real-time market data, charting tools, technical analysis indicators, and more. With these resources, you can make informed investment decisions and execute trades with ease.
+                  <br>Educational Resources: Century21fincs.org is committed to empowering investors with knowledge and insights. They provide a range of educational resources, such as articles, webinars, tutorials, and market analysis reports. These resources can help you improve your understanding of investing and stay updated with the latest trends.
+                  <br>Account Management: Century21fincs.org simplifies the investment process by offering account management services. They have dedicated account managers who can assist you with account setup, asset allocation, monitoring your portfolio, and making adjustments when needed. This can be particularly beneficial for busy individuals who prefer a hands-off approach to investing.
+                  <br>Robust Security Measures: Century21fincs.org prioritizes the security of your investments and personal information. They employ advanced security measures, including encryption technology and secure servers, to ensure the safety of your data and transactions.
+                  </p>
+                  <p>These are just a few highlights of what Century21fincs.org offers as a multi-faceted investment platform. Whether you are a conservative investor looking for long-term wealth creation or a more active trader seeking short-term gains, Century21fincs.org aims to provide the tools and services to help you achieve your financial goals.</p>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <h2>Our Experience</h2>
+                  <p>
+                     Established in 2015, we are a leading global investment platform, our experience sets us apart from other investment platforms in the market. With decades of combined experience and a team of seasoned investment professionals, we have a deep understanding of the financial industry and the intricacies of various asset classes.<br>
+                    Our expertise spans across a wide range of investment sectors, including stocks, bonds, real estate, commodities, and alternative investments. This comprehensive knowledge allows us to offer our clients a diverse range of investment opportunities, tailored to their specific goals and risk appetite.<br>
+                    One of our key strengths lies in our robust research and analysis capabilities. We leverage sophisticated tools and technology to conduct in-depth market research, monitor macroeconomic trends, and identify potential investment opportunities before they become mainstream. This proactive approach allows us to stay ahead of market trends and deliver superior investment results for our clients.<br>
+                    <br>Furthermore, we place great emphasis on risk management. Our team of experts carefully assesses and manages risk across our investment portfolios, aiming to protect our clients' capital while maximizing returns. We follow rigorous due diligence and compliance processes to ensure that every investment meets our strict criteria and aligns with our clients' investment objectives.<br>
+                What sets us apart is our relentless commitment to exceptional client service. We believe in building long-lasting relationships with our clients based on trust, transparency, and open communication. Our dedicated team provides personalized investment advice, frequent portfolio updates, and prompt responses to client inquiries, ensuring that their financial goals are met and exceeded.<br>
+                In summary, as a leading global investment platform, our experience encompasses a deep understanding of various asset classes, a commitment to rigorous research and risk management, and a client-centric approach. We are dedicated to helping our clients achieve their financial goals and navigate the complexities of the investment landscape with confidence.<br>
+                </p>
+                  <!--<p>
+                     Established in 2019, we are a leading global alternative financial management platform, specializing in global macro and digital /static/assets. At Century21fincs.org, we have accumulated a wealth of experience that sets us apart in the industry and With a strong foundation and a passion for innovation, we have been at the forefront of transforming the financial technology landscape. Our success story is built on the trust and satisfaction of our clients. We proudly manage digital /static/assets for private and institutional investors around the world including sovereign wealth funds, corporate and public pension plans, foundations, and endowments. We have over 100+ team members and over 25+ Portfolio Managers/Traders/Sub-PMs with offices in London, New York, Geneva, Jersey, Hong Kong, Abu Dhabi, Edinburgh, Singapore, Austin, Chicago, and the Cayman Islands. Our experience extends beyond product development as we have fostered strategic partnerships with an ever-growing group of some of the best founders in Finance and crypto, leveraging their expertise and networks to enhance our service offerings. From Jack Dorsey at Block, Uri Kolodny and Eli Ben-Sasson at StarkWare, and Michael Shaulov at Fireblocks, to Elena Nadolinski at Iron Fish, Yubo Ruan at Parallel, Ming Wu at Strips, and more in stealth, these founders have expanded both our thinking and how we attend to the unique requirements of our clients. As we look to the future, we remain committed to pushing the boundaries of fintech innovation. We will continue to invest in research and development, exploring emerging technologies such as blockchain, artificial intelligence, and machine learning to unlock new possibilities and redefine the financial landscape.
+                     </p>-->
+                  <br/>
+                  <hr/>
+                  <div class="what-we-do-content-accordion">
+                     <ul class="accordion">
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           Overview
+                           </a>
+                           <div class="accordion-content">
+                              <p>
+                                 Century21fincs.org stands as a trailblazing force in the realm of financial services, offering users unprecedented access to a comprehensive suite of fair and rewarding financial services. Anchored in principles of transparency, Century21fincs.org prides itself on providing passive returns on investment, and competitive loan rates while eliminating exorbitant fees, and executing transactions swiftly, all aimed at bolstering your financial prosperity. As a leading figure in the realm of decentralized finance (DeFi), Century21fincs.org empowers and equips its users with an array of cutting-edge DApps and DeFi protocols. From trading to Liquidity mining and crypto-backed loans, the platform offers a comprehensive suite of services, placing the power directly in the hands of its community. At its core, Century21fincs.org operates as a decentralized marketplace, fundamentally reshaping the way cryptocurrencies are exchanged. Through a peer-to-peer system, users can seamlessly conduct transactions without reliance on centralized intermediaries, ensuring a level of autonomy and security previously unseen in traditional financial settings. Operating with a community-centric ethos, Century21fincs.org allocates 25% of its revenue back to the community, amplifying earnings on investing and borrowing. This unwavering commitment to its investors, combined with attractive interest rates and nominal fees, has fueled Century21fincs.org's substantial growth trajectory since its inception, solidifying its position as a beacon of innovation in the world of decentralized finance.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           History
+                           </a>
+                           <div class="accordion-content">
+                              <p>The Century21fincs.org Network was founded in 2019 with the aim to provide a full community-orientated alternative to the traditional banking financial system for loans and return on investments. Most of the big banks and financial institutions had gotten away with risky and unethical behavior done at the expense of the owners funds; Presenting various bogus charges, transaction fees, and restraints placed that hinder asset transactions and transfers. Century21fincs.org broke in, allowing its users access to services such as crypto management and crypto-backed loans where users could deposit coins as collateral to obtain loans in stable currencies. It also encourages users to stake cryptocurrency on DeFi Locked staking pools providing Liquidity and enjoying rewarding APY’s on coins staked. Since its inception, the Century21fincs.org platform has experienced significant growth. The number of active users grew by about 39.79% in the second quarter of the following year. This can be broken down to a weekly average growth of 3.06% increase in the number of users. The Century21fincs.org Platform boasts of over 32,000 users at the moment and holds more than $500 million in community deposits for users. Century21fincs.org offers high-interest-earning savings accounts, low-interest borrowing fees, and a solid security system.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           Licensing
+                           </a>
+                           <div class="accordion-content">
+                              <p>Century21fincs.org Financial Management Limited is approved and registered by the BVI Financial Services Commission as a certified financial manager pursuant to the Investment Business (Approved Manager) Regulations (2012) (as amended) and treated as licensed for the Financial Services Commission Act 2001. As a Certified Fund, Century21fincs.org is authorized by the British Virgin Islands Financial Services Commission to provide management services to investment funds and also to private & institutional investors.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           Web3 Banking & Defi Finance
+                           </a>
+                           <div class="accordion-content">
+                              <p>As we are speedily entering the age of web3 and the metaverse, we are witnessing that new technologies and business models are evolving that promise to change the working of banks. Web3 in banking has significant implications for all parties involved. It entails enhanced services for end users—retail banking users, investment bankers and corporates. Other benefits for users include an immersive experience through a metaverse-simulated environment, the ability to provide continuous platform updates and improved interactiveness with AI modules incorporated into metaverse avatars. Interestingly, web3 technologies like blockchain, smart contracts, and NFTs, bring new and advanced capabilities to the entire banking sector.</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- End Featured Services Area -->
+      <!-- Start video Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">
+            More About Us</h2>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-6 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><video class="object-fit-md-contain w-100 p-2" src="/static/Astralassets20.mp4" type="video/mp4" controls="true"></video></a>
+                     </div>
+                     <h3>
+                        <a href="#">Century21fincs.org.</a>
+                     </h3>
+                     <p>We are a profit maximizing company.</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><video class="object-fit-md-contain w-100 p-2" src="/static/testimonial_astral.mp4" type="video/mp4" controls="true"></video></a>
+                     </div>
+                     <h3>
+                        <a href="#">Our Testimonials</a>
+                     </h3>
+                     <p>Investors are happy with our results. Watch what they say.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End video Features Area -->
+      <!--<section class="history-area ptb-100">
+         <div class="container">
+         <div class="section-title">
+
+         <h3>Century21fincs.org is designed to provide unparalleled access to fair, rewarding financial services. Also low rates for loans, zero fees, and lightning quick transactions <span class="overlay"></span></h3>
+         </div>
+         <ol class="timeline history-timeline history-timeline-style-two">
+         <li class="timeline-block">
+         <div class="timeline-date">
+         <span>1</span>
+
+         <sup>stage</sup>
+         </div>
+         <div class="timeline-icon">
+         <span class="dot-badge"></span>
+         </div>
+         <div class="timeline-content">
+         <div class="row align-items-center">
+         <div class="col-lg-5 col-md-12">
+         <div class="image" data-tilt>
+         <img src="/static/images/exchange.jpg" alt="image">
+         </div>
+         </div>
+         <div class="col-lg-7 col-md-12">
+         <div class="content">
+         <h3>Overview</h3>
+         <p>While we’ve invested in both equity and tokens over the last four years, many have asked that we take a more active role in managing our tokens, including staking them, providing liquidity, participating in governance and trading through their platforms. Our network of builders at Ethereum, Solana, major DeFi protocols and beyond have urged us to do the same.
+         We remain committed to working collaboratively with the crypto community, including providing ongoing support for research. We will also continue to partner with crypto teams across every stage of their journey out of our seed venture, growth and expansion funds.
+         <br/>
+
+         Century21fincs.org is a proof of concept type of decentralized marketplace, offering a peer-to-peer system designed for exchanging various cryptocurrencies directly among users without interference of a centralized institution. Century21fincs.org is also a market leading DeFi provider, offering its users the power of various DAPPS and DeFi protocols for services like Liquidity mining and crypto backed loans. Operating on a community-first mandate, Century21fincs.org returns 40% of its revenue back to its community in form of additional earnings on savings and borrowing. Combining attractive interest rates, low fees, and a strong community; the platform has experienced good growth since its inception.</p>
+         </div>
+         </div>
+         </div>
+         </div>
+         </li>
+         <li class="timeline-block">
+         <div class="timeline-date">
+         <span>2</span>
+         <sup>stage</sup>
+         </div>
+          <div class="timeline-icon">
+         <span class="dot-badge"></span>
+         </div>
+         <div class="timeline-content">
+         <div class="row align-items-center">
+         <div class="col-lg-5 col-md-12">
+         <div class="image" data-tilt>
+         <img src="/static/images/swapper.jpg" alt="image">
+         </div>
+         </div>
+         <div class="col-lg-7 col-md-12">
+         <div class="content">
+         <h3>History</h3>
+         <p>The Century21fincs.org Network was founded in 2019 with the one aim to provide a full community-orientated alternative to the traditional banking financial system for loans and return on investments. Most of the big banks and financial institutions had gotten away with risky and unethical behavior done at the expense of the owners funds; Presenting various bogus charges, transaction fees and restraints placed that hinder asset transaction and transfer. Century21fincs.org broke in, allowing its users access to services such as crypto management, crypto backed loans where users could deposit coins as collateral to obtain loans in stable currencies. It also encourages encourages
+         users to stake cryptocurrency on DeFi Locked staking pools providing Liquidity and enjoying rewarding APY’sq on coins staked.  <br/> Since its inception, the Century21fincs.org platform has experienced significant growth. The number of active users growing with about 80% in the second quarter. This can be broken down to a weekly average growth of 3.06% increase in the number of users. The Century21fincs.org Platform boasts of over 52,000 users at the moment and holds more than $44 million in community deposits for users. Century21fincs.org offers high interest-earning savings accounts, low-interest borrowing fees and a solid security system.
+         </p>
+         </div>
+         </div>
+         </div>
+         </div>
+         </li>
+
+         </ol>
+         </div>
+         </section>-->
+      <!-- Start Dibiz Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">Why choose Century21fincs.org</h1>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-diamond"></i> Secured crypto wallet</a>
+                     </h3>
+                     <p>Century21fincs.org uses Ledger Vault's industry leading information technology infrastructure to securely control its crypto assets. Ledger Vault provides security solutions and $150M pooled crime insurance.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-conversation"></i> Funds Management</a>
+                     </h3>
+                     <p>We make solid trading strategies and actively leverage the markets for spot, futures, options, OTC and other trading tools in order to provide customers with stable investment return for their preservation and appreciation of their crypto assets.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"> <i class="flaticon-share-icon"></i>
+                        Team experience</a>
+                     </h3>
+                     <p>Century21fincs.org management and engineering teams have 15+ years in FinTech and technology development. We're not an ICO backed!</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-darts"></i> Risk control</a>
+                     </h3>
+                     <p>Century21fincs.org team has extensive expertise in currency exchange risk management. We know how to save our funds so we know how to save yours.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"> <i class="flaticon-competitor"></i> Dynamic development</a>
+                     </h3>
+                     <p>We implement at least 1 new feature every week. All of them based on real customer demand. We’d like to hear from you and do it for you.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-megaphone"></i> Better customer support</a>
+                     </h3>
+                     <p>All our clients get VIP level support 24/7. Traders, miners, hodlers are happy with our service. Century21fincs.org never sleeps.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz Features Area -->
+      <!-- Start Featured Services Area -->
+      <section class="featured-services-area pb-70">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-research"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">10+ Crypto Pairs</a></h3>
+                     <p>Market pairs for all supported currencies, including BTC/ETH, BNB/ETH, and BTC/USDT. The feature transforms the Century21fincs.org platform into the single place you need in order to send, receive, safely store, and borrow against your Century21fincs.org Investments.</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-speed"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">The Best Market Prices</a></h3>
+                     <p>Century21fincs.org’s Smart Routing System offers the best market price by connecting to multiple exchanges at once. You no longer need to crunch numbers – the system does it for you within a fraction of a second from a single endpoint and/or user account.</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-email-marketing"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">Fixed Price & Immediate Execution </a></h3>
+                     <p>Zero price fluctuations when you place an order. Your balances are updated immediately, the moment your order is confirmed.</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-keywords"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">Unlimited Swaps</a></h3>
+                     <p>No upper limit on the swaps you can make, up to $100,000 per single transaction across listed crypto options.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Start Dibiz Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">
+            Our Strategic Partners</h2>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/images/ledger.png" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Secured custody.</a>
+                     </h3>
+                     <p> Custody management solution and $150 million pooled crime insurance.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c14ba144d4cf7d4defdd8a_Magic-Square-New-Logo-Light-Backgrounds.svg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Web 3.0 Games and Apps</a>
+                     </h3>
+                     <p> Discover Community-Vetted Blockchain and Crypto Apps, Games, CeDeFi and more</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeed39f4004c58c2736d_fireblocks-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Asset Platform</a>
+                     </h3>
+                     <p> Hundreds of crypto and digital asset businesses use Fireblocks software and APIs to custody.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeeeab837a3615e1ab4d_elliptic-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Crypto-compliance.</a>
+                     </h3>
+                     <p> Manage financial crime risk, achieve regulatory compliance, and grow with confidence.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeedf19bb0f0fd76f978_ondato-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Compliance</a>
+                     </h3>
+                     <p> Live video identity verification, data monitoring, risk scoring and case management all in one place.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeedb3273f789ca625ac_sumsub-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Compliance & AML</a>
+                     </h3>
+                     <p>The perfect balance between customer experience and compliance.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz Features Area -->
+      <!-- Start SEO Analysis Area -->
+      <div class="seo-analysis-area ptb-100" style = "background-color:#064E3B;">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="analysis-form">
+                     <h2 style = "color:white;">Safety and Security</h2>
+                     <p style = "color:white;">All operations at Century21fincs.org are 100% secure. Century21fincs.org follows all the industry best practices for IT security checks, data protection, access rights, and data encryption.
+                        Century21fincs.org uses Ledger Vault's industry leading information technology infrastructure to securely control its crypto assets with a multi-authorization self-custody management solution and $150 million pooled crime insurance.
+                        All credit card operations are under PCI Security Standards, all crypto operations – in accordance with Cryptocurrency Security Standard (CCSS). We run external security audits on a regular basis.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="analysis-img">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61d83fe2acd2f6d2d2380a44_ledger-entreprise-solutions-logo.svg" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5ef44f28e5eccc0d604d741f_elliptic_white-p-500.png" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cae1ec150c45092fb90153_logo_fireblocks.svg" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da869afea5d9ef46607715e_secure_logo_pcidss.png" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8cb535df54b8b1ed31c97_secure_logo_ccss.png" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da869af4dcf8c3d4fb8ab66_secure_logo_dsec.svg" alt="Image" width = "150">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End SEO Analysis Area -->
+      <!-- Start Subscribe Area -->
+      <section class="subscribe-area ptb-100">
+         <div class="container">
+            <div class="subscribe-content">
+               <span class="sub-title">Latest Market News & Updates</span>
+               <h2>Subscribe To Our Newsletter</h2>
+               <p>Subscribe to Century21fincs.org Newsletters — the best way to stay informed about how bitcoin, cryptocurrencies and digital assets are transforming the global financial systems.</p>
+               <form action="" class="newsletter-form" data-bs-toggle="validator" method="post" accept-charset="utf-8">
+                  <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off" required>
+                  <button type="submit" class="default-btn">Subscribe Now</button>
+                  <div id="validator-newsletter" class="form-result"></div>
+               </form>
+            </div>
+         </div>
+         <div class="shape9"><img src="/static/assets/img/shape/shape9.png" alt="image"></div>
+         <div class="shape10"><img src="/static/assets/img/shape/shape10.png" alt="image"></div>
+         <div class="shape11"><img src="/static/assets/img/shape/shape11.png" alt="image"></div>
+         <div class="shape12"><img src="/static/assets/img/shape/shape12.png" alt="image"></div>
+      </section>
+      <!-- End Subscribe Area -->
+      <!-- Start Footer Area -->
+      <footer class="footer-area ds-footer-area">
+         <div class="container">
+            <div class="row">
+               <div class = "col-lg-6" style = "color:white;">
+                  Century21fincs.org - a multi-faced investment platform providing a variety of crypto and fiat services. AA caters to active investors, allowing them to use their digital assets beyond hodling and trading. Century21fincs.org offer crypto wallet services with integrated exchange, trading, lending and crypto-rewards. Products, services, information and/or materials contained herein may not be legally available for specific or certain jurisdictions, countries under embargoes or sanctions and/or other blacklisted countries. If such restrictions apply to you, you are prohibited from accessing the website.
+               </div>
+               <div class = "col-lg-6" style = "color:white;">
+                  Investing in cryptocurrencies, tokens and token-based securities is highly risky and may lead to total loss of investment. Use of the site is subject to certain risks, including but not limited to those listed here. All activities on this site are governed by our Terms of Service and Privacy Policy which you agree to by using this site. Century21fincs.org and the employees, officers, directors and affiliates of Century21fincs.org may own equity, tokens or other interests in companies using the site and may also participate in certain current offerings using the site (where permitted).
+                  <br/><br/>
+               </div>
+               <br/>
+               <hr style = "color:white;"/>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                     <a href="{% url 'home' %}" class="logo">
+                        <h3><span style="color:gold !important; font-weight: bold;">A</span><span style="color:blue !important; font-weight: bold;">S</span><span style="color:green !important">T</span><span style="color:gold !important">R</span><span style="color:red !important">A</span><span style="color:blue !important">L</span><span style="color:gold !important">A</span><span style="color:blue !important">SS</span><span style="color:gold !important">ETS</span></h3>
+                     </a>
+                     <p>Century21fincs.org is a non-custodial digital service, which means you own the keys. We respect your privacy. We never have access to, or knowledge of, your digital assets — only you do. </p>
+                     <ul class="social-link">
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                        <li><a href="https://wa.me/+Encrypted" class="d-block" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Quick Links</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'signin' %}">Login To AA</a></li>
+                        <li><a href="{% url 'signup' %}">Create an AA account</a></li>
+                        <li><a href="{% url 'reset_password' %}">Reset Password</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Resources</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'plan' %}">Plans</a></li>
+                        <li><a href="{% url 'contact' %}">Jobs & Careers</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Company</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+                        <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'legal' %}">Legal</a></li>
+                        <li><a href="{% url 'affiliates' %}">Affiliate Program</a></li>
+                        <li><a href="/static/astral_cert.png">Company Certificate</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Contact</h3>
+                     <ul class="footer-contact-info">
+                        <!-- <li>
+                           <i class="bx bx-map"></i>
+                           <span>Location:</span>
+                           2976 sunrise road las vegas
+                           </li>-->
+                        <li>
+                           <i class="bx bx-envelope"></i>
+                           <span>Email:</span>
+                           <a href="mailto:support@Century21fincs.org"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7dad1dac99dd0dcde">support@Century21fincs.org</span></a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Phone:</span>
+                           <a href="tell:Encrypted">Encrypted</a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Location: 1200, Woluwe-Saint-Lambert, Belgium.</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+Encrypted", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+         <div class="footer-bottom-area">
+            <p>All rights reserved. Century21fincs.org </p>
+         </div>
+      </footer>
+      <!-- End Footer Area -->
+      <div class="go-top"><i class="bx bx-up-arrow-alt"></i></div>
+      <a class= "open-button">
+         <div id="google_translate_element"></div>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.Vertical}, "google_translate_element");
+                    }
+         </script>
+         <script type="text/javascript" src="/static/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+      </a>
+      <style>
+         div.static {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2000;
+         }
+         .open-button {
+         padding: 13px 17px;
+         border-radius: 30px;
+         cursor: pointer;
+         opacity: 0.8;
+         position: fixed;
+         bottom: 80px;
+         margin-right: 70px;
+         width: 200px;
+         z-index: 1500;
+         background-color:#064E3B;
+         }
+      </style>
+      <div class = "static">
+         <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+               {
+               "symbols": [
+                 {
+                   "proName": "BITSTAMP:BTCUSD",
+                   "title": "BTC/USD"
+                 },
+                 {
+                   "proName": "BITSTAMP:ETHUSD",
+                   "title": "ETH/USD"
+                 },
+                 {
+                   "description": "DOGE",
+                   "proName": "BITFINEX:DOGEUSD"
+                 },
+                 {
+                   "description": "USDT",
+                   "proName": "KRAKEN:USDTUSD"
+                 },
+                 {
+                   "description": "BNB",
+                   "proName": "BINANCE:BNBUSD"
+                 },
+
+                 {
+                   "description": "XRP",
+                   "proName": "BITFINEX:XRPUSD"
+                 },
+                 {
+                   "description": "UNISWAP",
+                   "proName": "BITTREX:UNIUSD"
+                 },
+                 {
+                   "description": "XLM",
+                   "proName": "KRAKEN:XLMUSD"
+                 },
+                 {
+                   "description": "THETA",
+                   "proName": "KUCOIN:THETAUSDT"
+                 },
+                 {
+                   "description": "XMR",
+                   "proName": "BITFINEX:XMRUSD"
+                 },
+                 {
+                   "description": "ALGO",
+                   "proName": "KRAKEN:ALGOUSD"
+                 },
+                 {
+                   "description": "AAVE",
+                   "proName": "BINANCE:AAVEBTC"
+                 },
+                 {
+                   "description": "TEZOS",
+                   "proName": "BINANCE:XTZBTC"
+                 },
+                 {
+                   "description": "DASH",
+                   "proName": "KRAKEN:DASHUSD"
+                 },
+                 {
+                   "description": "ZCASH",
+                   "proName": "BITFINEX:ZECUSD"
+                 },
+                 {
+                   "description": "YFI",
+                   "proName": "BITKUB:YFITHB"
+                 },
+                 {
+                   "description": "ADA",
+                   "proName": "BINANCE:ADABTC"
+                 }
+               ],
+               "showSymbolLogo": true,
+               "colorTheme": "dark",
+               "isTransparent": false,
+               "displayMode": "adaptive",
+               "locale": "en"
+               }
+            </script>
+         </div>
+         <!-- TradingView Widget END -->
+      </div>
+      <!-- Links of JS files -->
+      <script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/appear.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/magnific-popup.min.js"></script>
+      <script src="/static/assets/js/fancybox.min.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/meanmenu.min.js"></script>
+      <script src="/static/assets/js/nice-select.min.js"></script>
+      <script src="/static/assets/js/sticky-sidebar.min.js"></script>
+      <script src="/static/assets/js/wow.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/ajaxchimp.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+   </body>
+   <!-- Mirrored from Century21fincs.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:01 GMT -->
+</html>

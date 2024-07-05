@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="zxx">
+{% load static %}
+   <!-- Mirrored from Century21fincs.org/stats by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:02 GMT -->
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="author" content="Century21fincs.org Developers">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Century21fincs.org, Century21fincs.org, Century21fincs.org swap, Buy tokens, send and receive, Crypto, Receive and send, Century21fincs.org, Century21fincs.org">
+      <meta name=”robots” content=”index, follow”>
+      <!-- Links of CSS files -->
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/static/assets/css/boxicons.min.css">
+      <link rel="stylesheet" href="/static/assets/css/meanmenu.min.css">
+      <link rel="stylesheet" href="/static/assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/dark.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <title>Century21fincs.org</title>
+      <link rel="icon" type="image/png" href="/static/lionhead.png">
+   </head>
+   </head>
+   <body class="data-science-color-css">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area navbar-area-with-data-science with-relative">
+         <div class="dibiz-responsive-nav">
+            <div class="container-fluid">
+               <div class="dibiz-responsive-menu">
+                  <div class="logo">
+                     <a href="{% url 'home' %}">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dibiz-nav">
+            <div class="container-fluid">
+               <nav class="navbar navbar-expand-md navbar-light">
+                  <a class="navbar-brand" href="index-2.html">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                  </a>
+                  <div class="collapse navbar-collapse mean-menu">
+                     <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Company <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+                              <li class="nav-item"><a href="{% url 'stats' %}" class="nav-link">Our Stats</a></li>
+                              <li class="nav-item"><a href="{% url 'affiliates' %}" class="nav-link">Affiliate Program</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'plan' %}" class="nav-link">Plans</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'realestate' %}" class="nav-link">Real Estate</a></li>
+                              <li class="nav-item"><a href="{% url 'retirement' %}" class="nav-link">Retirement</a></li>
+                              <li class="nav-item"><a href="{% url 'forex' %}" class="nav-link">Forex</a></li>
+                              <li class="nav-item"><a href="{% url 'gold' %}" class="nav-link">Gold</a></li>
+                              <li class="nav-item"><a href="{% url 'oilandgas' %}" class="nav-link">Oil and Gas</a></li>
+                              <li class="nav-item"><a href="{% url 'crypto' %}" class="nav-link">Crypto</a></li>
+                              <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link">Portfolio Management Service</a></li>
+                              <li class="nav-item"><a href="{% url 'stocks' %}" class="nav-link">Stocks</a></li>
+                              <li class="nav-item"><a href="{% url 'agriculture' %}" class="nav-link">Agriculture</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'signin' %}" class="nav-link">Log In</a></li>
+                     </ul>
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started<i class='flaticon-chevron'></i></a>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="others-option-for-responsive">
+            <div class="container">
+               <div class="dot-menu">
+                  <div class="inner">
+                     <div class="circle circle-one"></div>
+                     <div class="circle circle-two"></div>
+                     <div class="circle circle-three"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="option-inner">
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started<i class='flaticon-chevron'></i></a>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Navbar Area -->
+      <!-- Start Page Banner Area -->
+      <section class="ds-page-banner-area">
+         <div class="container">
+            <div class="ds-page-banner-content">
+               <h1>Company Stats</h1>
+               <ul class="list">
+                  <li>
+                     <a href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li>/</li>
+                  <li>Stats</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- End Page Banner Area -->
+      <!-- Start About Area -->
+      <section class="about-area ptb-100">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6 col-md-12">
+                  <div class="about-image">
+                     <img src="/static/assets/img/about-img1.jpg" alt="image">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="about-content">
+                     <div class="content">
+                        <h2>Our Stats</h2>
+                        <p>Do you want additional Century21fincs.org data or statistics for your publication? We can help! Just contact us today at support@Century21fincs.org</p>
+                        <p>The stats below are updated every month. Last update: 1 Aug 2023, 10:00 UTC </p>
+                        <ul class="funfacts-list">
+                           <li>
+                              <div class="list">
+                                 <i class="flaticon-shopping-cart"></i>
+                                 <h3 class="odometer" data-count="6215">00</h3>
+                                 <p>Avg. user balance (USD)</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list">
+                                 <i class="flaticon-research"></i>
+                                 <h3 class="odometer" data-count="32">00</h3>
+                                 <p>BTC dominance (%)</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list">
+                                 <i class="flaticon-keywords"></i>
+                                 <h3 class="odometer" data-count="825">00</h3>
+                                 <p>Avg. MultiHODL input (USD)</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list">
+                                 <i class="flaticon-reputation"></i>
+                                 <h3 class="odometer" data-count="10">00</h3>
+                                 <p>Avg. ID verification time (mins)</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list">
+                                 <i class="flaticon-megaphone"></i>
+                                 <h3 class="odometer" data-count="2">00</h3>
+                                 <p>Avg. response time (mins)</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list">
+                                 <i class="flaticon-content-management"></i>
+                                 <h3 class="odometer" data-count="3">00</h3>
+                                 <p>Avg. handling time (mins)</p>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End About Area -->
+      <!-- Start Services Area -->
+      <section class="services-area bg-f9f9f9 pt-100 pb-70">
+         <div class="container">
+            <div class="row">
+               <div class = "col-lg-12">
+                  <h3>Coin Popularity Map in MultiHODL</h3>
+                  <div class="embed-chart w-embed w-script">
+                     <div class="infogram-embed" data-id="ae92239a-19c8-4d7e-bf1a-6b0f7a14f56d" data-type="interactive" data-title="Coin Popularity in MH" style="min-height: 1px;" data-processed="1" id="ig-351b53ba-9abb-f883-94f9-021db9cd0b8a"><iframe style="border: medium; width: 100%; height: 500px;" src="https://e.infogram.com/ae92239a-19c8-4d7e-bf1a-6b0f7a14f56d?parent_url=https%3A%2F%2Fwww.Century21fincs.org%2Fstats&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Coin Popularity in MH"></iframe></div>
+                     <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="../e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+                  </div>
+               </div>
+               <div class = "col-lg-12">
+                  <h3>Distribution of users holding yield in different coins/tokens (% of total users)</h3>
+                  <div class="infogram-embed" data-id="148be0ed-1628-4fb5-8188-e92585a18344" data-type="interactive" data-title="Savings" style="min-height: 1px;" data-processed="1" id="ig-97dd2135-e6a3-5b58-8e1f-5ba344ac89c1"><iframe style="border: medium; width: 100%; height: 500px;" src="https://e.infogram.com/148be0ed-1628-4fb5-8188-e92585a18344?parent_url=https%3A%2F%2Fwww.Century21fincs.org%2Fstats&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Savings"></iframe></div>
+               </div>
+               <br/><br/>
+               <div class = "col-lg-12">
+                  <h3>Total platform volume, $M</h3>
+                  <div class="embed-chart w-embed w-script">
+                     <div class="infogram-embed" data-id="26e73779-767d-43bf-b692-ac1954c2ce2e" data-type="interactive" data-title="Trading Volume" style="min-height: 1px;" data-processed="1" id="ig-0cdb85b0-9470-806a-8d89-74e1c5e6974c"><iframe style="border: medium; width: 100%; height: 500px;" src="https://e.infogram.com/26e73779-767d-43bf-b692-ac1954c2ce2e?parent_url=https%3A%2F%2Fwww.Century21fincs.org%2Fstats&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Trading Volume"></iframe></div>
+                     <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="../e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+                  </div>
+               </div>
+               <br/><br/>
+               <div class = "col-lg-12">
+                  <h3>Revenue vs Crypto Rewards</h3>
+                  <div class="embed-chart w-embed w-script">
+                     <div class="infogram-embed" data-id="bc3f2981-d8ad-4772-b5d0-848d468153ea" data-type="interactive" data-title="Revenue and Interest" style="min-height: 1px;" data-processed="1" id="ig-82784330-c33f-132d-4189-b761c41e41f5"><iframe style="border: medium; width: 100%;height: 500px;" src="https://e.infogram.com/bc3f2981-d8ad-4772-b5d0-848d468153ea?parent_url=https%3A%2F%2Fwww.Century21fincs.org%2Fstats&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Revenue and Interest"></iframe></div>
+                     <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="../e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Start Project Start Area -->
+      <section class="project-start-area ptb-100">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="project-start-image">
+                     <img src="/static/assets/img/project-start1.png" alt="image">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="project-start-content">
+                     <span class="sub-title">Get Started With Us</span>
+                     <h2>The fullstack solution for investment</h2>
+                     <p>Century21fincs.org offers products that aim to create an economy where financial freedom doesn’t come with a price tag. We continue to be selective about the projects we work with, providing background information on each project and alerting you when new sales launch. </p>
+                     <a href="{% url 'signup' %}" class="default-btn">Get Started</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="shape2"><img src="/static/assets/img/shape/shape2.png" alt="image"></div>
+         <div class="shape3"><img src="/static/assets/img/shape/shape3.png" alt="image"></div>
+         <div class="shape5"><img src="/static/assets/img/shape/shape5.png" alt="image"></div>
+         <div class="shape6"><img src="/static/assets/img/shape/shape6.png" alt="image"></div>
+         <div class="shape7"><img src="/static/assets/img/shape/shape7.png" alt="image"></div>
+         <div class="shape13"><img src="/static/assets/img/shape/shape13.png" alt="image"></div>
+      </section>
+      <!-- End Project Start Area -->
+      <!-- Start Footer Area -->
+      <footer class="footer-area ds-footer-area">
+         <div class="container">
+            <div class="row">
+               <div class = "col-lg-6" style = "color:white;">
+                  Century21fincs.org - a multi-faced investment platform providing a variety of crypto and fiat services. Century21fincs.org caters to active investors, allowing them to use their digital assets beyond hodling and trading. Century21fincs.org offer crypto wallet services with integrated exchange, trading, lending and crypto-rewards. Products, services, information and/or materials contained herein may not be legally available for specific or certain jurisdictions, countries under embargoes or sanctions and/or other blacklisted countries. If such restrictions apply to you, you are prohibited from accessing the website.
+               </div>
+               <div class = "col-lg-6" style = "color:white;">
+                  Investing in cryptocurrencies, tokens and token-based securities is highly risky and may lead to total loss of investment. Use of the site is subject to certain risks, including but not limited to those listed here. All activities on this site are governed by our Terms of Service and Privacy Policy which you agree to by using this site. Century21fincs.org and the employees, officers, directors and affiliates of Century21fincs.org may own equity, tokens or other interests in companies using the site and may also participate in certain current offerings using the site (where permitted).
+                  <br/><br/>
+               </div>
+               <br/>
+               <hr style = "color:white;"/>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                     <a href="{% url 'home' %}" class="logo">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                     <p>Century21fincs.org is a non-custodial digital service, which means you own the keys. We respect your privacy. We never have access to, or knowledge of, your digital assets — only you do. </p>
+                     <ul class="social-link">
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                        <li><a href="https://wa.me/+32466906387" class="d-block" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Quick Links</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'signin' %}">Login To Century21fincs.org</a></li>
+                        <li><a href="{% url 'signup' %}">Create an Century21fincs.org account</a></li>
+                        <li><a href="{% url 'reset_password' %}">Reset Password</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Resources</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'plan' %}">Plans</a></li>
+                        <li><a href="{% url 'contact' %}">Jobs & Careers</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Company</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+                        <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'legal' %}">Legal</a></li>
+                        <li><a href="{% url 'affiliates' %}">Affiliate Program</a></li>
+                        <li><a href="">Our Brochure is being prepared for 2024</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Contact</h3>
+                     <ul class="footer-contact-info">
+                        <!-- <li>
+                           <i class="bx bx-map"></i>
+                           <span>Location:</span>
+                           2976 sunrise road las vegas
+                           </li>-->
+                        <li>
+                           <i class="bx bx-envelope"></i>
+                           <span>Email:</span>
+                           <a href="mailto:support@Century21fincs.org"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7dad1dac99dd0dcde">support@Century21fincs.org</span></a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Phone:</span>
+                           <a href="tell:32466906387">+32 466 90 6387</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom-area">
+            <p>All rights reserved. Century21fincs.org.org </p>
+         </div>
+      </footer>
+      <!-- End Footer Area -->
+      <div class="go-top"><i class="bx bx-up-arrow-alt"></i></div>
+      <a class= "open-button">
+         <div id="google_translate_element"></div>
+
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, "google_translate_element");
+                    }
+         </script>
+         <script type="text/javascript" src="/static/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+      </a>
+      <style>
+         div.static {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2000;
+         }
+         .open-button {
+         padding: 13px 17px;
+         border-radius: 30px;
+         cursor: pointer;
+         opacity: 0.8;
+         position: fixed;
+         bottom: 80px;
+         margin-right: 70px;
+         width: 200px;
+         z-index: 1500;
+         background-color:#064E3B;
+         }
+      </style>
+      <div class = "static">
+         <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+               {
+               "symbols": [
+                 {
+                   "proName": "BITSTAMP:BTCUSD",
+                   "title": "BTC/USD"
+                 },
+                 {
+                   "proName": "BITSTAMP:ETHUSD",
+                   "title": "ETH/USD"
+                 },
+                 {
+                   "description": "DOGE",
+                   "proName": "BITFINEX:DOGEUSD"
+                 },
+                 {
+                   "description": "USDT",
+                   "proName": "KRAKEN:USDTUSD"
+                 },
+                 {
+                   "description": "BNB",
+                   "proName": "BINANCE:BNBUSD"
+                 },
+
+                 {
+                   "description": "XRP",
+                   "proName": "BITFINEX:XRPUSD"
+                 },
+                 {
+                   "description": "UNISWAP",
+                   "proName": "BITTREX:UNIUSD"
+                 },
+                 {
+                   "description": "XLM",
+                   "proName": "KRAKEN:XLMUSD"
+                 },
+                 {
+                   "description": "THETA",
+                   "proName": "KUCOIN:THETAUSDT"
+                 },
+                 {
+                   "description": "XMR",
+                   "proName": "BITFINEX:XMRUSD"
+                 },
+                 {
+                   "description": "ALGO",
+                   "proName": "KRAKEN:ALGOUSD"
+                 },
+                 {
+                   "description": "Century21fincs.orgVE",
+                   "proName": "BINANCE:Century21fincs.orgVEBTC"
+                 },
+                 {
+                   "description": "TEZOS",
+                   "proName": "BINANCE:XTZBTC"
+                 },
+                 {
+                   "description": "DASH",
+                   "proName": "KRAKEN:DASHUSD"
+                 },
+                 {
+                   "description": "ZCASH",
+                   "proName": "BITFINEX:ZECUSD"
+                 },
+                 {
+                   "description": "YFI",
+                   "proName": "BITKUB:YFITHB"
+                 },
+                 {
+                   "description": "ADA",
+                   "proName": "BINANCE:ADABTC"
+                 }
+               ],
+               "showSymbolLogo": true,
+               "colorTheme": "dark",
+               "isTransparent": false,
+               "displayMode": "adaptive",
+               "locale": "en"
+               }
+            </script>
+         </div>
+         <!-- TradingView Widget END -->
+      </div>
+      <!-- Links of JS files -->
+      <script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/appear.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/magnific-popup.min.js"></script>
+      <script src="/static/assets/js/fancybox.min.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/meanmenu.min.js"></script>
+      <script src="/static/assets/js/nice-select.min.js"></script>
+      <script src="/static/assets/js/sticky-sidebar.min.js"></script>
+      <script src="/static/assets/js/wow.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/ajaxchimp.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+   </body>
+   <!-- Mirrored from Century21fincs.org.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:01 GMT -->
+</html>

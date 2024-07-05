@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="zxx">
+   <!-- Mirrored from Century21fincs.org/terms by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:07:11 GMT -->
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="author" content="Century21fincs.org Developers">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Century21fincs.org, Century21fincs.org, Century21fincs.org swap, Buy tokens, send and receive, Crypto, Receive and send, Century21fincs.org, Century21fincs.org">
+      <meta name=”robots” content=”index, follow”>
+      <!-- Links of CSS files -->
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/static/assets/css/boxicons.min.css">
+      <link rel="stylesheet" href="/static/assets/css/meanmenu.min.css">
+      <link rel="stylesheet" href="/static/assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/dark.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <title>Century21fincs.org</title>
+      <link rel="icon" type="image/png" href="/static/lionhead.png">
+   </head>
+   </head>
+   <body class="data-science-color-css">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area navbar-color-white">
+         <div class="dibiz-responsive-nav">
+            <div class="container">
+               <div class="dibiz-responsive-menu">
+                  <div class="logo">
+                     <a href="{% url 'home' %}">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dibiz-nav">
+            <div class="container">
+               <nav class="navbar navbar-expand-md navbar-light">
+                  <a class="navbar-brand" href="{% url 'home' %}">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                  </a>
+                  <div class="collapse navbar-collapse mean-menu">
+                     <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Company <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+                              <li class="nav-item"><a href="{% url 'stats' %}" class="nav-link">Our Stats</a></li>
+                              <li class="nav-item"><a href="{% url 'affiliates' %}" class="nav-link">Affiliate Program</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'plan' %}" class="nav-link">Plans</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'realestate' %}" class="nav-link">Real Estate</a></li>
+                              <li class="nav-item"><a href="{% url 'retirement' %}" class="nav-link">Retirement</a></li>
+                              <li class="nav-item"><a href="{% url 'forex' %}" class="nav-link">Forex</a></li>
+                              <li class="nav-item"><a href="{% url 'gold' %}" class="nav-link">Gold</a></li>
+                              <li class="nav-item"><a href="{% url 'oilandgas' %}" class="nav-link">Oil and Gas</a></li>
+                              <li class="nav-item"><a href="{% url 'crypto' %}" class="nav-link">Crypto</a></li>
+                              <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link">Portfolio Management Service</a></li>
+                              <li class="nav-item"><a href="{% url 'stocks' %}" class="nav-link">Stocks</a></li>
+                              <li class="nav-item"><a href="{% url 'agriculture' %}" class="nav-link">Agriculture</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'signin' %}" class="nav-link">Log In</a></li>
+                     </ul>
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <div class="side-menu-btn">
+                              <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                           </div>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="others-option-for-responsive">
+            <div class="container">
+               <div class="dot-menu">
+                  <div class="inner">
+                     <div class="circle circle-one"></div>
+                     <div class="circle circle-two"></div>
+                     <div class="circle circle-three"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="option-inner">
+                     <div class="others-option justify-content-center d-flex align-items-center">
+                        <div class="option-item">
+                           <div class="side-menu-btn">
+                              <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                           </div>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Navbar Area -->
+      <!-- Sidebar Modal -->
+      <div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <button type="button" class="close" data-bs-dismiss="modal"><i class='bx bx-x'></i></button>
+               <div class="modal-body">
+                  <div class="logo">
+                     <a href="{% url 'home' %}" class="d-inline-block"><img src="/static/images/cchexnew.png" alt="image"></a>
+                  </div>
+                  <div class="sidebar-contact-info">
+                     <h2>
+                        <a href="tel:+Century21fincs.org">+Century21fincs.org</a>
+                        <span>OR</span>
+                        <a href="mailto:support@Century21fincs.org"><span class="__cf_email__" data-cfemail="442c2128282b04202d262d3e6a272b29">Email Us</span></a>
+                     </h2>
+                  </div>
+                  <ul class="social-list">
+                     <li><span>Follow Us On:</span></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Sidebar Modal -->
+      <!-- Start Page Title Area -->
+      <section class="page-title-area">
+         <div class="container">
+            <div class="page-title-content">
+               <h1 style = "color:white;">Terms & Conditions</h1>
+            </div>
+         </div>
+         <div class="shape2"><img src="/static/assets/img/shape/shape2.png" alt="image"></div>
+         <div class="shape3"><img src="/static/assets/img/shape/shape3.png" alt="image"></div>
+         <div class="shape5"><img src="/static/assets/img/shape/shape5.png" alt="image"></div>
+         <div class="shape6"><img src="/static/assets/img/shape/shape6.png" alt="image"></div>
+         <div class="shape7"><img src="/static/assets/img/shape/shape7.png" alt="image"></div>
+         <div class="shape8"><img src="/static/assets/img/shape/shape8.png" alt="image"></div>
+         <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+         </div>
+      </section>
+      <!-- End Page Title Area -->
+      <!-- Start Privacy Policy Area -->
+      <section class="privacy-policy-area bg-f9f9f9 ptb-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-md-12">
+                  <div class="privacy-policy-content">
+                     <img src="/static/images/tocs.jpg" alt="image">
+                     <p><i>This Terms & Conditions was last updated on September 23, 2022.</i></p>
+                     This Terms of Service (“Agreement”) is a binding contract between you, an individual or entity user
+                     or authorized representative of such user (“you”) and Amalgamated Token Services Inc. (“ATS”)
+                     and its wholly owned subsidiaries, Century21fincs.org Services LLC, Century21fincs.org Lend LLC, and
+                     Century21fincs.org Markets LLC (collectively with ATS, “Century21fincs.org”) (also herein referred to as “we,” “us”
+                     or “our”). This Agreement governs your use of any website that links to these terms, including
+                     https://Century21fincs.org/ access to one or more hosted Digital Asset wallets to track, manage, and
+                     arrange the transfer of supported digital currencies; lending and trading in Digital assets on both
+                     an agency and principal basis; conversion services to arrange for the purchase and sale of Digital
+                     assets in transactions; and access to a U. S. Dollar acustodianccount for use in connection with
+                     the Services. Century21fincs.org is not a bank, broker-dealer, tax advisor, or investment adviser and does
+                     not offer these or any related services.
+                     <br><br>
+                     BY ACCESSING OR USING THE SITE OR OUR SERVICES, YOU AGREE THAT YOU HAVE READ,
+                     UNDERSTOOD AND AGREE TO BE BOND BY ALL THE TERMS AND CONDITIONS CONTAINED
+                     IN THIS AGREEMENT.<br><br>
+                     <h3>PART 1 - ACCESS</h3>
+                     1. Eligibility. To be eligible to use our Site and Services you must be at least 18 years old and meet
+                     other threshold criteria. For example, we prohibit certain types of entities and individuals from
+                     using our Site and Services including, but not limited to, foreign financial institutions, foreign shell
+                     banks, private banking accounts, senior foreign political figures, FINRA employees, and US
+                     broker-dealer employees.<br><br>
+                     2. Amendments. We may amend,modify, or add terms to this Agreement by posting it on the Site
+                     or emailing the revised Agreement to you, and the revised Agreement shall be effective at such
+                     time. If you do not agree with any such modification, your sole and exclusive remedy is to
+                     terminate your use of the Services and close your Account. You agree that we shall not be liable
+                     to you or any third party for any modification or termination of the Services, or suspension or
+                     termination of your access to the Services, except to the extent otherwise expressly set forth
+                     herein.<br><br>
+                     3. Century21fincs.org Accounts. In order to use Century21fincs.org, you will need to register for a Century21fincs.org
+                     Account (a “Century21fincs.org Account”). During the registration process, we will ask for your
+                     information and at some point verify your identity.<br><br>
+                     4. Risks. You agree and understand that your access and use of the Site and Services is at your
+                     own risk. Risks include, but are not limited to substantial or total loss when buying, selling, or
+                     holding Digital assets; limited liquidity; legislative and regulatory changes or actions that may
+                     adversely affect the use, transfer, exchange and value of Digital assets; Digital assets are not
+                     insured by the FDIC or SIPC and do not receive any other similar protections; and Digital assets
+                     may have an increased risk of fraud or cyber attack. For additional information, see our FAQs.
+                     Century21fincs.org makes no representations regarding the likelihood or probability that your participation
+                     on the Site or in our Services will achieve a particular outcome or goal.<br><br>
+                     We shall not bear any liability, whatsoever, for any damage or interruptions caused by fraud, cyber
+                     attacks, or any malware such as, but not limited to, computer viruses, spyware, scareware, Trojan
+                     horses, or worms that may affect your computer. We disclaim any and all liability for phishing,
+                     spoofing or other attacks. We advise you to use reputable software for malware screening and
+                     attack prevention. You should also be aware that SMS and email services are vulnerable to
+                     spoofing and phishing attacks and should use care in reviewing messages purporting to originate
+                     from Century21fincs.org.<br><br>
+                     You are fully responsible for the security of your account and all activities in connection with your
+                     credentials. Always log into your Century21fincs.org Account through the Century21fincs.org Site to review any
+                     transactions or required actions if you have any uncertainty regarding the authenticity of any
+                     communication or support.<br><br>
+                     <h3>PART 2: LIMITATION OF LIABILITY; NO WARRANTY</h3>
+                     IN NO EVENT SHALL Century21fincs.org, ITS AFFILIATES AND SERVICE PROVIDERS, OR ANY OF
+                     THEIR RESPECTIVE OFFICERS, DIRECTORS, AGENTS, EMPLOYEES OR REPRESENTATIVES,
+                     BE LIABLE (A) FOR ANY AMOUNT GREATER THAN THE VALUE OF THE SUPPORTED DIGITAL 
+                     ASSET REFLECTED IN YOUR Century21fincs.org ACCOUNT OR (B) FOR ANY LOST PROFITS OR
+                     ANY SPECIAL, INCIDENTAL, INDIRECT, INTANGIBLE, OR CONSEQUENTIAL DAMAGES,
+                     WHETHER BASED IN CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE,
+                     ARISING OUT OF OR IN CONNECTION WITH EITHER THE AUTHORIZED OR UNAUTHORIZED
+                     USE OF THE SITE OR SERVICES, OR IN CONNECTION WITH THIS AGREEMENT, EVEN IF A
+                     Century21fincs.org REPRESENTATIVE KNEW OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF
+                     SUCH DAMAGES AND NOTWITHSTANDING THE FAILURE OF ANY AGREED OR OTHER
+                     REMEDY OF ITS ESSENTIAL PURPOSE, EXCEPT TO THE EXTENT OF A FINAL JUDICIAL
+                     DETERMINATION THAT SUCH DAMAGES WERE A RESULT OF Century21fincs.org GROSS
+                     NEGLIGENCE, FRAUD, WILLFUL MISCONDUCT OR INTENTIONAL VIOLATION OF LAW OR
+                     EXCEPT IN JURISDICTIONS THAT DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
+                     INCIDENTAL OR CONSEQUENTIAL DAMAGES.
+                     SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY
+                     REPRESENTATION OR WARRANTY, WHETHER EXPRESS, IMPLIED OR STATUTORY. TO THE
+                     MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, Century21fincs.org SPECIFICALLY
+                     DISCLAIMS ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A
+                     PARTICULAR PURPOSE AND/OR NON-INFRINGEMENT. Century21fincs.org DOES NOT MAKE ANY
+                     REPRESENTATIONS OR WARRANTIES THAT ACCESS TO THE SITE, ANY PART OF THE
+                     SERVICES, INCLUDING MOBILE SERVICES, OR ANY OF THE MATERIALS CONTAINED
+                     THEREIN, WILL BE CONTINUOUS, UNINTERRUPTED, TIMELY, OR ERROR-FREE AND WILL
+                     NOT BE LIABLE FOR ANY LOSSES RELATING THERETO. Century21fincs.org DOES NOT
+                     GUARANTEE THAT ANY ORDER WILL BE ACCEPTED OR EXECUTED.
+                     <h3>Part 3: Crypto Asset Wallets</h3>
+                     <br><br>
+                     1. General. Crypto asset wallets are provided by third party custodians which are not owned or
+                     controlled by Century21fincs.org. Through these third party custodian wallets, we enable you to
+                     monitor the storage, tracking and management of Digital assets contained in a hosted digital
+                     currency wallet. You will have the ability to request, send and receive (by placing orders), and
+                     store Digital assets from third parties by giving instructions through the Site. We may limit this
+                     functionality, and we may require you to verify your identity prior to engaging in certain
+                     transactions<br><br>
+                     <h3>Part 4: Transactions</h3>
+                     1. Digital Asset Transactions. We process transactions according to the instructions you submit
+                     to us. We do not guarantee the identity of any user, receiver, or another party; therefore, you
+                     should verify that all information is correct prior to sending instructions to us. If you submit an
+                     order, that order will be irrevocable and final unless that order is cancelled prior to execution.
+                     Any pending withdrawals from your Century21fincs.org Account that have been submitted to a Digital
+                     Asset network will be unconfirmed for a period of time pending sufficient confirmation of the
+                     transaction by the Digital Asset network. Transactions in a pending state may not be available
+                     for Century21fincs.org to reverse or otherwise alter the transaction. The funds used for your pending
+                     transactions will not be displayed in your account balance or be available to conduct other
+                     transactions.<br><br>
+                     2. Operation of Digital Asset Protocols. Century21fincs.org does not own or control the underlying
+                     software protocols that govern the operation of Digital assets supported on our platform. In
+                     general, the underlying protocols are open source and anyone can use, copy, modify, and
+                     distribute them. By using our Services, you acknowledge and agree (i) that we are not responsible
+                     for operation of the underlying protocols and that we make no guarantee of their functionality,
+                     security, or availability; and (ii) that the underlying protocols are subject to sudden changes in
+                     operating rules (a/k/a “forks”) that could materially affect the value, function, name, and other
+                     attributes of the Digital Asset. In the event of a fork, you agree that we may temporarily suspend
+                     operations (with or without advance support to you) and that we may, in our sole discretion, decide
+                     whether or not to support either branch of the forked protocol entirely. You acknowledge and
+                     agree that Century21fincs.org has no responsibility whatsoever for a branch of a forked protocol that is
+                     unsupported.<br><br>
+                     <h3>Part 5: Staking</h3>
+                     1. Staking Services. When you hold Digital assets in your Century21fincs.org Account, you may be able
+                     to “stake” these assets in a third-party proof-of-stake network via staking services facilitated
+                     by Century21fincs.org. In a proof-of-stake network, transaction validators are chosen using a formula
+                     based on ownership of the underlying Digital Asset as opposed to computing power (i.e.,
+                     proof of work). Our custodian partners will stake these assets on your behalf. In addition,
+                     Century21fincs.org entities or its service providers may serve as transaction validators or similar
+                     nodes on their own behalf on the networks where these assets are staked. In this capacity,
+                     neither Century21fincs.org nor its affiliated entities uses your Digital assets.
+                     2. Automatic Voting Proxy. If you stake your assets with us, you agree to give us, the protocol,
+                     our custodian or node operation partners your proxy to vote on any governance issues
+                     relating to the staked Digital Asset, and you waive any right to any claim related to any such
+                     voting right. Further, unless we or our custodian partner determines that it is in the best
+                     interests of such custodian partner, Century21fincs.org, or you to vote on such governance matters,
+                     the custodian or node operation partner shall abstain from participating in any such vote.
+                     3. No Guarantee. You have no right to a reward until it is received by the designated protocol or
+                     our custodian partner and processed by Century21fincs.org and until you have maintained a positive
+                     balance for at least three (3) consecutive days during the applicable period. Your reward will
+                     be distributed on a pro-rata basis based on your average balance of the particular Digital
+                     Asset to the total of all rewards received by our custodian partner and processed by
+                     Century21fincs.org during the applicable period. Rewards will be distributed to your Century21fincs.org
+                     Account once per month unless otherwise provided. Century21fincs.org will use reasonable efforts to
+                     facilitate the staking of any Digital assets for which you are using Century21fincs.org’s staking
+                     services. The “staking rewards rate” is disclosed by Century21fincs.org for each particular Digital
+                     Asset. For any Digital Asset listed for less than 90 days, Century21fincs.org shall use commercially
+                     reasonable efforts to determine a reward rate that it determines is reasonably likely to be
+                     achieved for the following month. This rate is an estimate and changes over time.
+                     Century21fincs.org DOES NOT GUARANTEE THAT YOU WILL RECEIVE ANY STAKING REWARDS,
+                     ANY SPECIFIC STAKING REWARD, OR ANY STAKING RETURN OVER TIME, INCLUDING
+                     THE STAKING REWARDS RATE. ALL SUCH REWARDS ARE BASED ENTIRELY ON THE
+                     UNDERLYING PROTOCOL OF THE APPLICABLE DIGITAL ASSET.
+                     4. Century21fincs.org reserves the right in its sole and absolute discretion to cease providing staking
+                     services, including discontinuing the accrual of any rewards, in the event that Century21fincs.org
+                     suspects any fraud, misconduct, potential compromise of the underlying protocol or any other
+                     Prohibited Use or Prohibited Business.<br><br>
+                     <h3>Part 6: General Provisions</h3>
+                     1. Limited License. We grant you a limited, nonexclusive, nontransferable license, subject to the
+                     terms of this Agreement, to access and use the Century21fincs.org Site, and related content, materials,
+                     information (collectively, the “Content”) solely for approved purposes as permitted by Century21fincs.org
+                     from time to time. Any other use of the Site or Content is expressly prohibited and all other right,
+                     title, and interest in the Site or Content is exclusively the property of Century21fincs.org and its licensors.
+                     You agree you will not copy, transmit, distribute, sell, license, reverse engineer, delete or modify,
+                     interfere with, publish, or participate in the transfer or sale of, create derivative works from, or in
+                     any other way exploit any of the Content, in whole or in part. The website “https://
+                     Century21fincs.org/”, “Century21fincs.org”,. You may not copy, imitate, or use them without our prior written
+                     consent.<br><br>
+                     2. Website Accuracy. The Century21fincs.org Site (including, without limitation, the Content) may not
+                     always be entirely accurate, complete or current and may also include technical inaccuracies or
+                     typographical errors. In an effort to continue to provide you with as complete and accurate
+                     information as possible, information may be changed or updated from time to time without support,
+                     such as, but not limited to, information regarding our policies, products, and services.
+                     Accordingly, you should verify all information before relying on it, and all decisions based on
+                     information contained on the Site are your sole responsibility and we shall have no liability for
+                     such decisions. Links to third-party materials (including, without limitation, websites) may be
+                     provided as a convenience but are not controlled by us. You acknowledge and agree that we are 
+                     not responsible for any aspect of the information, content, or services contained in any third-party
+                     materials or on any third party sites accessible or linked to the Site.<br><br>
+                     3. Suspension, Termination, and Cancellation. Century21fincs.org may: (a) suspend, restrict, or terminate
+                     your access to any or all of the Services, and/or (b) deactivate or cancel your account if: we are so
+                     required by a facially valid subpoena, court order, or binding order of a government authority; we
+                     reasonably suspect you of using your Century21fincs.org Account in connection with a Prohibited Use or
+                     Business; your use of your Century21fincs.org Account or our Services is subject to any pending
+                     litigation, investigation, or government proceeding and/or we perceive a heightened risk of legal
+                     or regulatory non-compliance associated with your activity; our service partners are unable to
+                     support your use; or you take any action that Century21fincs.org deems as circumventing our controls,
+                     including, but not limited to, opening multiple Century21fincs.org Accounts or abusing promotions which
+                     Century21fincs.org may offer from time to time. We are not responsible for any losses, whether direct or
+                     indirect, that you may incur as a result of our compliance with applicable law and regulations, the
+                     guidance or direction of any regulatory authority or government agency, or any writ of attachment,
+                     lien, levy, subpoena, warrant, or other legal order.<br><br>
+                     If Century21fincs.org suspends or closes your account, or terminates your use of the Services for any
+                     reason, we will provide you with support of our actions unless a court order or other legal or
+                     regulatory process prohibits Century21fincs.org from providing you with such support. You acknowledge
+                     that Century21fincs.org’s decision to take certain actions, including limiting access to, suspending, or
+                     closing your Account, may be based on confidential criteria that are essential to Century21fincs.org’s risk
+                     management and security protocols. You agree that Century21fincs.org is under no obligation to disclose
+                     the details of its risk management and security procedures to you.<br><br>
+                     You will be permitted to transfer Digital assets or funds associated with your Digital Asset wallet(s)
+                     and/or your USD Wallet(s) for ninety (90) days after Account deactivation or cancellation unless
+                     such transfer is otherwise prohibited (i) under the law, including but not limited to applicable
+                     sanctions programs, or (ii) by a facially valid subpoena or court order or (iii) due to a violation of
+                     the terms of this agreement including but not limited to a Prohibited Use violation, unless by
+                     operation of law or with the express permission of Century21fincs.org Markets. You may cancel your
+                     Century21fincs.org Account at any time by withdrawing all balances from your account and contacting
+                     us. You will not be charged for canceling your account, but you may be required to pay
+                     withdrawal fees and any outstanding amounts owed to us or our custodian partners. You
+                     authorize us to cancel or suspend any pending transactions at the time of cancellation.<br><br>
+                     4. Unclaimed Property. If you have assets or funds in your account, and Century21fincs.org is unable to
+                     contact you and has no record of your use of our Services for a year or more, applicable law may
+                     require us to report and/or deliver these assets or funds as unclaimed property to the applicable
+                     jurisdiction. Prior to doing so, Century21fincs.org will try to locate you with the information shown in our
+                     records. Century21fincs.org reserves the right to deduct a dormancy fee or other administrative charges
+                     from such unclaimed funds, as permitted by applicable law.<br><br>
+                     <h3>Part 7: Customer Feedback, Queries, Complaints, and Dispute Resolution.</h3>
+                     1. Contact Century21fincs.org . If you have any feedback, questions, or complaints, email us. When you
+                     contact us please provide us with your name, address, and any other information that we may
+                     need to identify you, your Century21fincs.org Account, and the transaction on which you have
+                     feedback, questions, or complaints.<br><br>
+                     <h3>Part 8: Other Provisions</h3>
+                     1. Entire Agreement. This Agreement, the Privacy Policy, E-Sign Consent, onboarding
+                     representations, trade confirmations, appendices incorporated by reference herein, together
+                     with the Subscriber Agreement, Lending Agreement, OTC Agreement or other ancillary
+                     agreement, if any, comprise the entire understanding and agreement between you and
+                     Century21fincs.org as to the subject matter hereof, and supersedes any and all prior discussions,
+                     agreements and understandings of any kind (including, without limitation, any prior versions of
+                     this Agreement), and every nature between and among you and Century21fincs.org. Section headings
+                     in this Agreement are for convenience only, and shall not govern the meaning or interpretation
+                     of any provision of this Agreement.<br><br>
+                     2. Taxes and W-9 Certification. You acknowledge that it is your sole responsibility to withhold,
+                     collect, report, and remit the correct amounts of taxes to the appropriate tax authorities. If you
+                     are a United States person then as a condition of using Century21fincs.org’s Services you certify
+                     under penalties of perjury that<br><br>
+                     3. ○ The Social Security number or Employer Identification Number you provided is correct; and<br><br>
+                     4. ○ You are not subject to backup withholding due to the failure to report interest and dividend
+                     income.<br><br>
+                     5. Further, you understand and acknowledge that Century21fincs.org does not provide tax or legal
+                     advice and that Century21fincs.org will report certain transactions to the Internal Revenue Service to
+                     the extent and manner in which it is required to do so by law.<br><br>
+                     <h3>APPENDIX 1: PROHIBITED USE, PROHIBITED BUSINESSES AND CONDITIONAL USE</h3>
+                     <br>
+                     Prohibited Use
+                     You may not use your Century21fincs.org Account to engage in the certain categories of activity
+                     (“Prohibited Uses”) including those listed in this section. The specific types of use listed below are
+                     representative, but not exhaustive. If you are uncertain as to whether or not your use of the
+                     Services involves a Prohibited Use, or have questions about how these requirements apply to
+                     you, contact us<br>
+                     Unlawful Activity: Activity which would violate, or assist in violation of, any law, statute, ordinance,
+                     or regulation, sanctions programs administered in the countries where Century21fincs.org conducts
+                     business, including but not limited to the U.S. Department of Treasury's Office of Foreign assets
+                     Control (“OFAC”), or which would involve proceeds of any unlawful activity; publish, distribute or
+                     disseminate any unlawful material or information;<br>
+                     Abusive Activity: Actions which impose an unreasonable or disproportionately large load on our
+                     infrastructure, or detrimentally interfere with, intercept, or expropriate any system, data, or
+                     information (including the use of bots or scripts); transmit or upload any material to the Site that
+                     contains viruses, trojan horses, worms, or any other harmful or deleterious programs; attempt to
+                     gain unauthorized access to the Century21fincs.org Site, other Century21fincs.org Accounts, computer systems
+                     or networks connected to the Century21fincs.org Site, through password mining or any other means; use
+                     Century21fincs.org Account information of another party to access or use the Century21fincs.org Site (Century21fincs.org
+                     regards the accessing of multiple Century21fincs.org Accounts from the same device to indicate potential
+                     abusive activity); or transfer your account access or rights to your account to a third party or by
+                     purchase of a Century21fincs.org account, unless by operation of law;
+                     <br>
+                     Abuse Other Users: Interfere with another individual's or entity's access to or use of any
+                     Century21fincs.org Services; defame, abuse, extort, harass, stalk, threaten or otherwise violate or infringe
+                     the legal rights (such as, but not limited to, rights of privacy, publicity and intellectual property) of
+                     others; incite, threaten, facilitate, promote, or encourage hate, racial intolerance, or violent acts
+                     against others; harvest or otherwise collect information from the Century21fincs.org Markets Site about
+                     others, including without limitation email addresses, without proper consent;
+                     Fraud: Activity which operates to defraud Century21fincs.org, its users, or any other person; provide any
+                     false, inaccurate, or misleading information to Century21fincs.org (Century21fincs.org regards temporary email
+                     addresses and disposable email addresses to be forms of misleading information);
+                     Gambling: Lotteries; bidding fee auctions; sports forecasting or odds making; fantasy sports
+                     leagues with cash prizes; internet gaming; contests; sweepstakes; games of chance.<br>
+                     Prohibited Businesses
+                     In addition to the Prohibited Uses described above, the following categories of businesses,
+                     business practices, and sale items are barred from Century21fincs.org(“prohibited Businesses”). The
+                     specific types of use listed below are representative, but not exhaustive. If you are uncertain as to
+                     whether or not your use of Century21fincs.org involves a Prohibited Business, or have questions about
+                     how these requirements apply to you, please contact us
+                     By opening a Century21fincs.org Account, you confirm that you will not use Century21fincs.org Services in
+                     connection with any of the following businesses, activities, practices, or items:
+                     Investment and Credit Services: Securities brokers; mortgage consulting or debt reduction
+                     services; credit counseling or repair; real estate opportunities; investment schemes;
+                     Restricted Financial Services: Check cashing, bail bonds; collections agencies.
+                     Intellectual Property or Proprietary Rights Infringement: Sales, distribution, or access to
+                     counterfeit music, movies, software, or other licensed materials without the appropriate
+                     authorization from the rights holder;
+                     Counterfeit or Unauthorized Goods: Unauthorized sale or resale of brand name or designer
+                     products or services; sale of goods or services that are illegally imported or exported or which are
+                     stolen;<br>
+                     Regulated Products and Services: Marijuana dispensaries and related businesses; sale of
+                     tobacco, e-cigarettes, and e-liquid; online prescription or pharmaceutical services; age restricted
+                     goods or services; weapons and munitions; gunpowder and other explosives; fireworks and
+                     related goods; toxic, flammable, and radioactive materials; products and services with varying
+                     legal status on a state-by-state basis;<br>
+                     Drugs and Drug Paraphernalia: Sale of narcotics, controlled substances, and any equipment
+                     designed for making or using drugs, such as bongs, vaporizers, and hookahs;
+                     Pseudo-Pharmaceuticals: Pharmaceuticals and other products that make health claims that have
+                     not been approved or verified by the applicable local and/or national regulatory body;
+                     Substances designed to mimic illegal drugs: Sale of a legal substance that provides the same
+                     effect as an illegal drug (e.g., salvia, kratom);<br>
+                     Adult Content and Services: Pornography and other obscene materials (including literature,
+                     imagery and other media); sites offering any sexually-related services such as prostitution,
+                     escorts, pay-per view, adult live chat features;<br>
+                     Multi-level Marketing: Pyramid schemes, network marketing, and referral marketing programs;
+                     Unfair, predatory or deceptive practices: Investment opportunities or other services that promise
+                     high rewards; Sale or resale of a service without added benefit to the buyer; resale of government
+                     offerings without authorization or added value; sites that we determine in our sole discretion to be
+                     unfair, deceptive, or predatory towards consumers;<br>
+                     High risk businesses: any businesses that we believe poses elevated financial risk, legal liability,
+                     or violates card network or bank policies.
+                     Conditional Use
+                     Express written consent and approval from Century21fincs.org must be obtained prior to using
+                     Century21fincs.org Services for the following categories of business and/or use ("Conditional Uses").
+                     Consent may be requested by contacting us. Century21fincs.org may also require you to agree to
+                     additional conditions, make supplemental representations and warranties, complete enhanced
+                     on-boarding procedures, and operate subject to restrictions if you use Century21fincs.org Markets
+                     Services in connection with any of following businesses, activities, or practices:
+                     Money Services: Money transmitters, Digital Currency transmitters; currency or Digital Currency
+                     exchanges or dealers; gift cards; prepaid cards; sale of in-game currency unless the merchant is
+                     the operator of the virtual world; act as a payment intermediary or aggregator or otherwise resell
+                     any of the Century21fincs.org Services;
+                     Charities: Acceptance of donations for nonprofit enterprise;
+                     Games of Skill: Games which are not defined as gambling under this Agreement or by
+                     law, but which require an entry fee and award a prize;
+                     Religious/Spiritual Organizations: Operation of a for-profit religious or spiritual organizations.
+                     <br><br>
+                     <h3>APPENDIX 2: VERIFICATION PROCEDURES AND LIMITS</h3>
+                     As a regulated financial service company operating in the US we are required to identify users on
+                     our platform. This ensures we remain in compliance with KYC/AML laws in the jurisdictions in
+                     which we operate, something that is necessary for us to be able to continue to offer digital
+                     currency exchange services to our customers. Century21fincs.org and our affiliates collect and verify
+                     information about you in order to: (a) protect Century21fincs.org and the community from fraudulent
+                     users, and (b) to keep appropriate records of Century21fincs.org customers, and (c) manage any
+                     transaction limitations<br>
+                     All customers who wish to use Century21fincs.org Services, including the sending and receiving of Digital
+                     assets reconciled to a blockchain, are required to establish a Century21fincs.org Account by:
+                     ● Providing your name and valid email address, password and your state and country of
+                     residence, and certify that you are 18 years or older,<br>
+                     ● Accepting Terms of Service, onboarding confirmations, Subscriber Agreement and Privacy
+                     Policy, and<br>
+                     ● Verifying your identity by submitting the following information (Century21fincs.org reserves the right to
+                     request additional information as needed; additional information may be requested of entities
+                     such as companies and trusts):<br>
+                     1. Full Name
+                     2. Date of Birth
+                     3. Physical address
+                     4. Social Security Number (or identification number from a government-issued ID for certain
+                     types of customers)
+                     5. Telephone number<br>
+                     ● Submitting a selfie picture from your webcam or mobile phone, as may be
+                     required.
+                     ● Submit a copy of an acceptable form of identification (i.e. passport, state driver's
+                     license, or state identification card)<br>
+                     Users may be required to sign transactions prior to sending them to Century21fincs.org's Custodian
+                     Partner. Notwithstanding these minimum verification procedures, Century21fincs.org may require you to
+                     provide or verify additional information, or to wait some amount of time after completion of a
+                     transaction, before permitting you to use any Century21fincs.org Service and/or before permitting you to
+                     engage in transactions beyond certain volume limits.
+                     <br><br>
+                     <h3>APPENDIX 3: E-SIGN DISCLOSURE AND CONSENT</h3>
+                     This policy describes how Century21fincs.org delivers communications to you electronically. We may
+                     amend this policy at any time by providing a revised version on our website. The revised version
+                     will be effective at the time we post it. We will provide you with prior support of any material
+                     changes via our website.
+                     Electronic Delivery of Communications
+                     You agree and consent to receive electronically all communications, agreements, documents,
+                     supports and disclosures (collectively, “Communications”) that we provide in connection with your
+                     Century21fincs.org Account and your use of Century21fincs.org Services. Communications include:<br>
+                     ● Terms of use and policies you agree to (e.g., the Century21fincs.org SubscriberAgreement, Terms of
+                     Service and Privacy Policy), including updates to these agreements or policies;<br>
+                     ● Account details, history, transaction receipts, confirmations, and any other Account or
+                     transaction information;<br>
+                     ● Legal, regulatory, and tax disclosures or statements we may be required to make available to
+                     you; and<br>
+                     ● Responses to claims or customer support inquiries filed in connection with your Account.
+                     We will provide these Communications to you by posting them on the Century21fincs.org website,<br>
+                     emailing them to you at the primary email address listed in your Century21fincs.org profile,
+                     communicating to you via instant chat, and/or through other electronic communication such as
+                     text message.
+                     Hardware and Software Requirements
+                     In order to access and retain electronic Communications, you will need the following computer
+                     hardware and software:<br>
+                     ● A device with an Internet connection;<br>
+                     ● A current web browser that includes 128-bit encryption (e.g. Internet Explorer
+                     version 9.0 and above, Firefox version 3.6 and above, Chrome version 31.0 and
+                     above, or Safari 7.0 and above) with cookies enabled;<br>
+                     ● A valid email address (your primary email address on file with Century21fincs.org);
+                     ● Multifactor Authentication enabled; and<br>
+                     ● Sufficient storage space to save past Communications or an installed printer to
+                     print them.<br>
+                     How to Withdraw Your Consent
+                     You may withdraw your consent to receive Communications electronically by contacting us or
+                     visiting our Privacy support page here. If you fail to provide consent or if you withdraw your
+                     consent to receive Communications electronically, Century21fincs.org reserves the right to immediately
+                     close your Account or charge you additional fees for paper copies.
+                     <br>
+                     Updating your Information
+                     It is your responsibility to provide us with a true, accurate and complete email address and your
+                     contact information, and to keep such information up to date. You understand and agree that if 
+                     Century21fincs.org sends you an electronic Communication but you do not receive it because your
+                     primary email address on file is incorrect, out of date, blocked by your service provider, or you are
+                     otherwise unable to receive electronic Communications, Century21fincs.org will be deemed to have
+                     provided the Communication to you.
+                     You may update your information by logging into your account and visiting profile or by contacting
+                     our support team.
+                     <br>
+                     <br>
+                     <h3>APPENDIX 4: STATE LICENSE DISCLOSURES</h3>
+                     Century21fincs.org ( “Century21fincs.org”) maintains licenses to engage in money transmission activities in many
+                     states, and these licenses may impact our provision and your use of certain Century21fincs.org Markets
+                     Services depending on where you live. Century21fincs.org Markets' licenses and corresponding required
+                     disclosures can be found on the Century21fincs.org Licenses Disclosure page
+                     Please note the following disclosures associated with virtual currency:<br>
+                     ● Virtual currency is not legal tender, is not backed by the government, and accounts and value
+                     balances are not subject to Federal Deposit Insurance Corporation or Securities Investor
+                     Protection Corporation protections.<br>
+                     ● Legislative and regulatory changes or actions at the state, federal, or international level may
+                     adversely affect the use, transfer, exchange, and value of virtual currency.<br>
+                     ● Transactions in virtual currency may be irreversible, and, accordingly, losses due to fraudulent or
+                     accidental transactions may not be recoverable.<br>
+                     ● Some virtual currency transactions shall be deemed to be made when recorded on a public
+                     ledger, which is not necessarily the date or time that the customer initiates the transaction.<br>
+                     ● The value of virtual currency may be derived from the continued willingness of market
+                     participants to exchange fiat currency for virtual currency, which may result in the potential for
+                     permanent and total loss of value of a particular virtual currency should the market for that virtual
+                     currency disappear.<br>
+                     ● There is no assurance that a person who accepts a virtual currency as payment today will
+                     continue to do so in the future.<br>
+                     ● The volatility and unpredictability of the price of virtual currency relative to fiat currency may
+                     result in significant loss over a short period of time.<br>
+                     ● The nature of virtual currency may lead to an increased risk of fraud or cyber attack.<br>
+                     ● The nature of virtual currency means that any technological difficulties experienced by
+                     Century21fincs.org may prevent the access or use of a customer's virtual currency.<br>
+                     ● Any bond or trust account maintained by Century21fincs.org t for the benefit of its customers may not
+                     be sufficient to cover all losses incurred by customers.<br>
+                     ● Withdrawal can be stopped
+                     <br>
+                     <br>
+                     POTENTIAL USERS OF DIGITAL OR VIRTUAL CURRENCIES, INCLUDING BUT NOT LIMITED TO
+                     BITCOIN, SHOULD BE FOREWARNED OF A POSSIBLE FINANCIAL LOSS AT THE TIME THAT
+                     SUCH CURRENCIES ARE EXCHANGED FOR FIAT CURRENCY DUE TO AN UNFAVORABLE
+                     EXCHANGE RATE. A FAVORABLE EXCHANGE RATE AT THE TIME OF EXCHANGE CAN RESULT
+                     IN A TAX LIABILITY. PLEASE CONSULT YOUR TAX ADVISOR REGARDING ANY TAX
+                     CONSEQUENCES ASSOCIATED WITH YOUR HOLDING OR USE OF DIGITAL OR VIRTUAL
+                     CURRENCIES.
+                     More inquiries, Contact Us at support@Century21fincs.org
+                     <blockquote class="blockquote">
+                        If you have any questions about this Policy, please contact us at
+                        <a href="mailto:support@Century21fincs.org">support@Century21fincs.org</a>.
+                     </blockquote>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12">
+                  <aside class="widget-area">
+                     <section class="widget widget_insight">
+                        <ul>
+                           <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                           <li class="active"><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Privacy Policy Area -->
+      <!-- Start Footer Area -->
+      <footer class="footer-area ds-footer-area">
+         <div class="container">
+            <div class="row">
+               <div class = "col-lg-6" style = "color:white;">
+                  Century21fincs.org - a multi-faced investment platform providing a variety of crypto and fiat services. AA caters to active investors, allowing them to use their digital assets beyond hodling and trading. Century21fincs.org offer crypto wallet services with integrated exchange, trading, lending and crypto-rewards. Products, services, information and/or materials contained herein may not be legally available for specific or certain jurisdictions, countries under embargoes or sanctions and/or other blacklisted countries. If such restrictions apply to you, you are prohibited from accessing the website.
+               </div>
+               <div class = "col-lg-6" style = "color:white;">
+                  Investing in cryptocurrencies, tokens and token-based securities is highly risky and may lead to total loss of investment. Use of the site is subject to certain risks, including but not limited to those listed here. All activities on this site are governed by our Terms of Service and Privacy Policy which you agree to by using this site. Century21fincs.org and the employees, officers, directors and affiliates of Century21fincs.org may own equity, tokens or other interests in companies using the site and may also participate in certain current offerings using the site (where permitted).
+                  <br/><br/>
+               </div>
+               <br/>
+               <hr style = "color:white;"/>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                     <a href="{% url 'home' %}" class="logo">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                     <p>Century21fincs.org is a non-custodial digital service, which means you own the keys. We respect your privacy. We never have access to, or knowledge of, your digital assets — only you do. </p>
+                     <ul class="social-link">
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                        <li><a href="https://wa.me/+Century21fincs.org" class="d-block" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Quick Links</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'signin' %}">Login To AA</a></li>
+                        <li><a href="{% url 'signup' %}">Create an AA account</a></li>
+                        <li><a href="{% url 'reset_password' %}">Reset Password</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Resources</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'plan' %}">Plans</a></li>
+                        <li><a href="{% url 'contact' %}">Jobs & Careers</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Company</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+                        <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'legal' %}">Legal</a></li>
+                        <li><a href="{% url 'affiliates' %}">Affiliate Program</a></li>
+                        <li><a href="">Our Brochure is being prepared for 2024</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Contact</h3>
+                     <ul class="footer-contact-info">
+                        <!-- <li>
+                           <i class="bx bx-map"></i>
+                           <span>Location:</span>
+                           2976 sunrise road las vegas
+                           </li>-->
+                        <li>
+                           <i class="bx bx-envelope"></i>
+                           <span>Email:</span>
+                           <a href="mailto:support@Century21fincs.org"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7dad1dac99dd0dcde">support@Century21fincs.org</span></a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Phone:</span>
+                           <a href="tell:Century21fincs.org">+32 466 90 6387</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom-area">
+            <p>All rights reserved. Century21fincs.org </p>
+         </div>
+      </footer>
+      <!-- End Footer Area -->
+      <div class="go-top"><i class="bx bx-up-arrow-alt"></i></div>
+      <a class= "open-button">
+         <div id="google_translate_element"></div>
+         <script data-cfasync="false" src="/static/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, "google_translate_element");
+                    }
+         </script>
+         <script type="text/javascript" src="/static/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+      </a>
+      <style>
+         div.static {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2000;
+         }
+         .open-button {
+         padding: 13px 17px;
+         border-radius: 30px;
+         cursor: pointer;
+         opacity: 0.8;
+         position: fixed;
+         bottom: 80px;
+         margin-right: 70px;
+         width: 200px;
+         z-index: 1500;
+         background-color:#064E3B;
+         }
+      </style>
+      <div class = "static">
+         <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="/static/s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+               {
+               "symbols": [
+                 {
+                   "proName": "BITSTAMP:BTCUSD",
+                   "title": "BTC/USD"
+                 },
+                 {
+                   "proName": "BITSTAMP:ETHUSD",
+                   "title": "ETH/USD"
+                 },
+                 {
+                   "description": "DOGE",
+                   "proName": "BITFINEX:DOGEUSD"
+                 },
+                 {
+                   "description": "USDT",
+                   "proName": "KRAKEN:USDTUSD"
+                 },
+                 {
+                   "description": "BNB",
+                   "proName": "BINANCE:BNBUSD"
+                 },
+                
+                 {
+                   "description": "XRP",
+                   "proName": "BITFINEX:XRPUSD"
+                 },
+                 {
+                   "description": "UNISWAP",
+                   "proName": "BITTREX:UNIUSD"
+                 },
+                 {
+                   "description": "XLM",
+                   "proName": "KRAKEN:XLMUSD"
+                 },
+                 {
+                   "description": "THETA",
+                   "proName": "KUCOIN:THETAUSDT"
+                 },
+                 {
+                   "description": "XMR",
+                   "proName": "BITFINEX:XMRUSD"
+                 },
+                 {
+                   "description": "ALGO",
+                   "proName": "KRAKEN:ALGOUSD"
+                 },
+                 {
+                   "description": "AAVE",
+                   "proName": "BINANCE:AAVEBTC"
+                 },
+                 {
+                   "description": "TEZOS",
+                   "proName": "BINANCE:XTZBTC"
+                 },
+                 {
+                   "description": "DASH",
+                   "proName": "KRAKEN:DASHUSD"
+                 },
+                 {
+                   "description": "ZCASH",
+                   "proName": "BITFINEX:ZECUSD"
+                 },
+                 {
+                   "description": "YFI",
+                   "proName": "BITKUB:YFITHB"
+                 },
+                 {
+                   "description": "ADA",
+                   "proName": "BINANCE:ADABTC"
+                 }
+               ],
+               "showSymbolLogo": true,
+               "colorTheme": "dark",
+               "isTransparent": false,
+               "displayMode": "adaptive",
+               "locale": "en"
+               }
+            </script>
+         </div>
+         <!-- TradingView Widget END -->
+      </div>
+      <!-- Links of JS files -->
+      <script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/appear.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/magnific-popup.min.js"></script>
+      <script src="/static/assets/js/fancybox.min.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/meanmenu.min.js"></script>
+      <script src="/static/assets/js/nice-select.min.js"></script>
+      <script src="/static/assets/js/sticky-sidebar.min.js"></script>
+      <script src="/static/assets/js/wow.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/ajaxchimp.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+   </body>
+   <!-- Mirrored from Century21fincs.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:01 GMT -->
+</html>

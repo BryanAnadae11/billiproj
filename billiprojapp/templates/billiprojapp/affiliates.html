@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="zxx">
+   <!-- Mirrored from Century21fincs.org/affiliates by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:33 GMT -->
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="author" content="Century21fincs.org Developers">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Century21fincs.org, Century21fincs.org, Century21fincs.org swap, Buy tokens, send and receive, Crypto, Receive and send, Century21fincs.org, Century21fincs.org">
+      <meta name=”robots” content=”index, follow”>
+      <!-- Links of CSS files -->
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/static/assets/css/boxicons.min.css">
+      <link rel="stylesheet" href="/static/assets/css/meanmenu.min.css">
+      <link rel="stylesheet" href="/static/assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/dark.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <title>Century21fincs.org</title>
+      <link rel="icon" type="image/png" href="/static/lionhead.png">
+   </head>
+   </head>
+   <body class="data-science-color-css">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area navbar-area-with-startup-it-agency">
+         <div class="dibiz-responsive-nav">
+            <div class="container-fluid">
+               <div class="dibiz-responsive-menu">
+                  <div class="logo">
+                     <a href="{% url 'home' %}">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dibiz-nav">
+            <div class="container-fluid">
+               <nav class="navbar navbar-expand-md navbar-light">
+                  <a class="navbar-brand" href="{% url 'home' %}">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                  </a>
+                  <div class="collapse navbar-collapse mean-menu">
+                     <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Company <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+                              <li class="nav-item"><a href="{% url 'stats' %}" class="nav-link">Our Stats</a></li>
+                              <li class="nav-item"><a href="{% url 'affiliates' %}" class="nav-link">Affiliate Program</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'plan' %}" class="nav-link">Plans</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'realestate' %}" class="nav-link">Real Estate</a></li>
+                              <li class="nav-item"><a href="{% url 'retirement' %}" class="nav-link">Retirement</a></li>
+                              <li class="nav-item"><a href="{% url 'forex' %}" class="nav-link">Forex</a></li>
+                              <li class="nav-item"><a href="{% url 'gold' %}" class="nav-link">Gold</a></li>
+                              <li class="nav-item"><a href="{% url 'oilandgas' %}" class="nav-link">Oil and Gas</a></li>
+                              <li class="nav-item"><a href="{% url 'crypto' %}" class="nav-link">Crypto</a></li>
+                              <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link">Portfolio Management Service</a></li>
+                              <li class="nav-item"><a href="{% url 'stocks' %}" class="nav-link">Stocks</a></li>
+                              <li class="nav-item"><a href="{% url 'agriculture' %}" class="nav-link">Agriculture</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'signin' %}" class="nav-link">Log In</a></li>
+                     </ul>
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started</a>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="others-option-for-responsive">
+            <div class="container">
+               <div class="dot-menu">
+                  <div class="inner">
+                     <div class="circle circle-one"></div>
+                     <div class="circle circle-two"></div>
+                     <div class="circle circle-three"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="option-inner">
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started</a>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Navbar Area -->
+      <!-- Start IT Main Banner Area -->
+      <section class="it-main-banner-area">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="it-banner-content">
+                     <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Join Century21fincs.org Partner Program. We are the best.
+                     </h1>
+                     <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">Be a part of a fast-growing company and get commissions for each active client you bring to Century21fincs.org.</p>
+                     <div class="btn-box wow animate__animated animate__fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
+                        <div class="d-flex align-items-center">
+                           <a href="{% url 'signup' %}" class="default-btn">Become An Affiliate</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="it-banner-image wow animate__animated animate__fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <img src="/static/assets/img/startup-it-agency/banner/main.png" alt="image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="it-banner-shape1">
+            <img src="/static/assets/img/startup-it-agency/banner/shape1.png" alt="image">
+         </div>
+         <div class="it-banner-shape2">
+            <img src="/static/assets/img/startup-it-agency/banner/shape2.png" alt="image">
+         </div>
+         <div class="it-banner-shape3">
+            <img src="/static/assets/img/startup-it-agency/banner/shape3.png" alt="image">
+         </div>
+      </section>
+      <!-- End IT Main Banner Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">How it works</h1>
+            <p align = "center">Be a part of a fast-growing company and get commissions for each active client you bring to Century21fincs.org.</p>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">1</a>
+                     </h3>
+                     <p>Sign Up</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">2</a>
+                     </h3>
+                     <p>Get tracking link</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">3</a>
+                     </h3>
+                     <p>Bring Traffic</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">4</a>
+                     </h3>
+                     <p>Earn Money</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">Our Partner Program in Numbers</h1>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">Up to 15%</a>
+                     </h3>
+                     <p> High conversion rate</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">180+</a>
+                     </h3>
+                     <p>GEOs accepted</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">2 payout methods</a>
+                     </h3>
+                     <p>Crypto, or stablecoins.</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">7 Languages</a>
+                     </h3>
+                     <p>Affiliate Manager Team speaks</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">No Limit</a>
+                     </h3>
+                     <p>No maximum limit on your payout</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">3 Payout Models</a>
+                     </h3>
+                     <p>Choose CPA (RevShare or Hybrid coming soon)</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">High payouts</a>
+                     </h3>
+                     <p>Above-average payouts</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#" style = "color:#064E3B;">2000+</a>
+                     </h3>
+                     <p>Partners and growing</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">
+            We are a partner you can trust</h2>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/images/ledger.png" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Secured custody.</a>
+                     </h3>
+                     <p> Custody management solution and $150 million pooled crime insurance.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c14ba144d4cf7d4defdd8a_Magic-Square-New-Logo-Light-Backgrounds.svg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Web 3.0 Games and Apps</a>
+                     </h3>
+                     <p> Discover Community-Vetted Blockchain and Crypto Apps, Games, CeDeFi and more</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeed39f4004c58c2736d_fireblocks-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Asset Platform</a>
+                     </h3>
+                     <p> Hundreds of crypto and digital asset businesses use Fireblocks software and APIs to custody.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeeeab837a3615e1ab4d_elliptic-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Crypto-compliance.</a>
+                     </h3>
+                     <p> Manage financial crime risk, achieve regulatory compliance, and grow with confidence.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeedf19bb0f0fd76f978_ondato-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Compliance</a>
+                     </h3>
+                     <p> Live video identity verification, data monitoring, risk scoring and case management all in one place.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeedb3273f789ca625ac_sumsub-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Compliance & AML</a>
+                     </h3>
+                     <p>The perfect balance between customer experience and compliance.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Start Dibiz About Area -->
+      <div class="dibiz-about-area pb-100">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="dibiz-about-image wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <img src="/static/assets/img/more-home/about/about-3.png" alt="image">
+                     <div class="wrap-content">
+                        <p>“We are a partner you can trust”</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="dibiz-about-content wow animate__animated animate__fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <span>Our Program</span>
+                     <h2>Who can participate?</h2>
+                     <p>
+                        We have no restrictions on who can become our Partners: an individual or a company - simply sign up for our Affiliate Platform and start earning immediately. Whoever you are, we know exactly what you need. Whether you are driving traffic via a website, have a strong online presence, working with social media accounts, online crypto educational platforms, channels, and other digital media.
+                        Or you work with a local presence and a personal client network, we have a commission plan that suits your audience.
+                     </p>
+                     <ul class="about-list">
+                        <li>
+                           Dedicated account managers
+                        </li>
+                        <li>
+                           Dashboard for traffic analysis
+                        </li>
+                        <li>
+                           Automated tracking links for dedicated landing pages
+                        </li>
+                     </ul>
+                     <div class="about-btn">
+                        <a href="{% url 'signup' %}" class="default-btn-with-radius">Get Started<i class="flaticon-next-button"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz About Area -->
+      <!-- Start Feedback Area -->
+      <div class="it-feedback-area ptb-100">
+         <div class="container">
+            <div class="startup-it-agency-title">
+               <span>Partner reviews</span>
+               <h2>What our partners have to say about us</h2>
+            </div>
+            <div class="it-feedback-slides owl-carousel owl-theme">
+               <div class="it-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/avatar.png" alt="image">
+                     <div class="title">
+                        <h3>Mikel Abraham</h3>
+                        <span>Affiliate Member</span>
+                     </div>
+                  </div>
+                  <p>“Century21fincs.org is an awesome platform and their affiliate program is absolutely top notch from my personal experience so far.<br>
+                     Right now I have been a member for a few weeks and I have only ran one campaign. I received a lot of very detailed help and resources from my affiliate "personal manager" aka the person designated to help me with anything relating to the program.”
+                  </p>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+               </div>
+               <div class="it-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/avatar.png" alt="image">
+                     <div class="title">
+                        <h3>Amanda</h3>
+                        <span>Youtube Blogger</span>
+                     </div>
+                  </div>
+                  <p>“I have to say, quite frankly, I love working with Century21fincs.org.<br>
+                     Payments are always made precisely. They have an excellent and precise dashboard with a responsive and professional manager.<br>
+                     In addition, and this is perhaps what I appreciate the most, we know that we send users to a high quality site and program.<br>
+                     And, that is really great!”
+                  </p>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+               </div>
+               <div class="it-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/avatar.png" alt="image">
+                     <div class="title">
+                        <h3>Mike wazowski</h3>
+                        <span>Affiliate</span>
+                     </div>
+                  </div>
+                  <p>“I started working with Century21fincs.org's Affiliate program some months ago. Here are my pros and cons.
+                     1. Tracking works perfect; 2. Payments are always on time; 3. Different Offers to choose from (10USD / 100USD / Compound up to 90$ -for more information check their offers); 4. Dashboard is very informative; 5. Support is super helpful and answers within 1-5 hours; 6. Payments in EURO or Crypto
+                     Cons: None ;)”
+                  </p>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+               </div>
+               <div class="it-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/avatar.png" alt="image">
+                     <div class="title">
+                        <h3>Sebastian</h3>
+                        <span>Affiliate Memeber</span>
+                     </div>
+                  </div>
+                  <p>“Good morning. I am Sebastian from Argentina. I am very happy with the Century21fincs.org affiliate program. It is available to everyone, it is easy to convert and you have constant assistance from an account agent. <br>
+                     The month of June, I billed $270 and on July 3 it was already deposited in my ETH wallet.
+                     Go ahead Century21fincs.org! I love your services!”
+                  </p>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+               </div>
+               <div class="it-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/avatar.png" alt="image">
+                     <div class="title">
+                        <h3>Garcia Fernando</h3>
+                        <span>Affiliate Member</span>
+                     </div>
+                  </div>
+                  <p>“Excelente plataforma, muy confiable , dinamica y practica, la verdad muy conforme con Century21fincs.org espero que siga creciendo mas y con nuevos proyectos, los interes son muy buenos para poder ganar en criptomonedas, siempre muy atentos en el soporte y pude resolver las dudas que tenia! lo recomiendo al 100%.”</p>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="it-feedback-shape">
+            <img src="/static/assets/img/startup-it-agency/feedback-shape.png" alt="image">
+         </div>
+      </div>
+      <!-- End Feedback Area -->
+      <!-- Start Project Start Area -->
+      <section class="project-start-area ptb-100">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="project-start-image">
+                     <img src="/static/assets/img/project-start1.png" alt="image">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="project-start-content">
+                     <span class="sub-title">Get Started With Us</span>
+                     <h2>The fullstack solution for crypto</h2>
+                     <p>Century21fincs.org got its start by giving you access to the best new crypto projects before the large exchanges. We continue to be selective about the projects we work with, providing background information on each project and alerting you when new sales launch. </p>
+                     <a href="{% url 'signup' %}" class="default-btn">Get Started</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="shape2"><img src="/static/assets/img/shape/shape2.png" alt="image"></div>
+         <div class="shape3"><img src="/static/assets/img/shape/shape3.png" alt="image"></div>
+         <div class="shape5"><img src="/static/assets/img/shape/shape5.png" alt="image"></div>
+         <div class="shape6"><img src="/static/assets/img/shape/shape6.png" alt="image"></div>
+         <div class="shape7"><img src="/static/assets/img/shape/shape7.png" alt="image"></div>
+         <div class="shape13"><img src="/static/assets/img/shape/shape13.png" alt="image"></div>
+      </section>
+      <!-- End Project Start Area -->
+      <!-- Start Footer Area -->
+      <footer class="footer-area ds-footer-area">
+         <div class="container">
+            <div class="row">
+               <div class = "col-lg-6" style = "color:white;">
+                  Astral Assets - a multi-faced investment platform providing a variety of crypto and fiat services. AA caters to active investors, allowing them to use their digital assets beyond hodling and trading. Astral Assets offer crypto wallet services with integrated exchange, trading, lending and crypto-rewards. Products, services, information and/or materials contained herein may not be legally available for specific or certain jurisdictions, countries under embargoes or sanctions and/or other blacklisted countries. If such restrictions apply to you, you are prohibited from accessing the website.
+               </div>
+               <div class = "col-lg-6" style = "color:white;">
+                  Investing in cryptocurrencies, tokens and token-based securities is highly risky and may lead to total loss of investment. Use of the site is subject to certain risks, including but not limited to those listed here. All activities on this site are governed by our Terms of Service and Privacy Policy which you agree to by using this site. Astral Assets and the employees, officers, directors and affiliates of Astral Assets may own equity, tokens or other interests in companies using the site and may also participate in certain current offerings using the site (where permitted).
+                  <br/><br/>
+               </div>
+               <br/>
+               <hr style = "color:white;"/>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                     <a href="{% url 'home' %}" class="logo">
+                        <h3><span style="color:gold !important; font-weight: bold;">C</span><span style="color:blue !important; font-weight: bold;">E</span><span style="color:green !important">N</span><span style="color:gold !important">T</span><span style="color:red !important">U</span><span style="color:blue !important">R</span><span style="color:gold !important">Y</span><span style="color:blue !important">2</span><span style="color:gold !important">1</span></h3>
+                     </a>
+                     <p>Astral Assets is a non-custodial digital service, which means you own the keys. We respect your privacy. We never have access to, or knowledge of, your digital assets — only you do. </p>
+                     <ul class="social-link">
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                        <li><a href="https://wa.me/+32466906387" class="d-block" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Quick Links</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'signin' %}">Login To AA</a></li>
+                        <li><a href="{% url 'signup' %}">Create an AA account</a></li>
+                        <li><a href="{% url 'reset_password' %}">Reset Password</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Resources</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'plan' %}">Plans</a></li>
+                        <li><a href="{% url 'contact' %}">Jobs & Careers</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Company</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+                        <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'legal' %}">Legal</a></li>
+                        <li><a href="{% url 'affiliates' %}">Affiliate Program</a></li>
+                        <li><a href="/static/astral_cert.png">Company Certificate</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Contact</h3>
+                     <ul class="footer-contact-info">
+                        <!-- <li>
+                           <i class="bx bx-map"></i>
+                           <span>Location:</span>
+                           2976 sunrise road las vegas
+                           </li>-->
+                        <li>
+                           <i class="bx bx-envelope"></i>
+                           <span>Email:</span>
+                           <a href="mailto:support@Century21fincs.org"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7dad1dac99dd0dcde">support@Century21fincs.org</span></a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Phone:</span>
+                           <a href="tell:32466906387">+32 466 90 6387</a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Location: 1200, Woluwe-Saint-Lambert, Belgium.</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom-area">
+            <p>All rights reserved. Astral Assets.org </p>
+         </div>
+      </footer>
+      <!-- End Footer Area -->
+      <div class="go-top"><i class="bx bx-up-arrow-alt"></i></div>
+      <a class= "open-button">
+         <div id="google_translate_element"></div>
+         <script data-cfasync="false" src="/static/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.Vertical}, "google_translate_element");
+                    }
+         </script>
+         <script type="text/javascript" src="/static/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+      </a>
+      <style>
+         div.static {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2000;
+         }
+         .open-button {
+         padding: 13px 17px;
+         border-radius: 30px;
+         cursor: pointer;
+         opacity: 0.8;
+         position: fixed;
+         bottom: 80px;
+         margin-right: 70px;
+         width: 200px;
+         z-index: 1500;
+         background-color:#064E3B;
+         }
+      </style>
+      <div class = "static">
+         <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="/static/s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+               {
+               "symbols": [
+                 {
+                   "proName": "BITSTAMP:BTCUSD",
+                   "title": "BTC/USD"
+                 },
+                 {
+                   "proName": "BITSTAMP:ETHUSD",
+                   "title": "ETH/USD"
+                 },
+                 {
+                   "description": "DOGE",
+                   "proName": "BITFINEX:DOGEUSD"
+                 },
+                 {
+                   "description": "USDT",
+                   "proName": "KRAKEN:USDTUSD"
+                 },
+                 {
+                   "description": "BNB",
+                   "proName": "BINANCE:BNBUSD"
+                 },
+
+                 {
+                   "description": "XRP",
+                   "proName": "BITFINEX:XRPUSD"
+                 },
+                 {
+                   "description": "UNISWAP",
+                   "proName": "BITTREX:UNIUSD"
+                 },
+                 {
+                   "description": "XLM",
+                   "proName": "KRAKEN:XLMUSD"
+                 },
+                 {
+                   "description": "THETA",
+                   "proName": "KUCOIN:THETAUSDT"
+                 },
+                 {
+                   "description": "XMR",
+                   "proName": "BITFINEX:XMRUSD"
+                 },
+                 {
+                   "description": "ALGO",
+                   "proName": "KRAKEN:ALGOUSD"
+                 },
+                 {
+                   "description": "AAVE",
+                   "proName": "BINANCE:AAVEBTC"
+                 },
+                 {
+                   "description": "TEZOS",
+                   "proName": "BINANCE:XTZBTC"
+                 },
+                 {
+                   "description": "DASH",
+                   "proName": "KRAKEN:DASHUSD"
+                 },
+                 {
+                   "description": "ZCASH",
+                   "proName": "BITFINEX:ZECUSD"
+                 },
+                 {
+                   "description": "YFI",
+                   "proName": "BITKUB:YFITHB"
+                 },
+                 {
+                   "description": "ADA",
+                   "proName": "BINANCE:ADABTC"
+                 }
+               ],
+               "showSymbolLogo": true,
+               "colorTheme": "dark",
+               "isTransparent": false,
+               "displayMode": "adaptive",
+               "locale": "en"
+               }
+            </script>
+         </div>
+         <!-- TradingView Widget END -->
+      </div>
+      <!-- Links of JS files -->
+      <script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/appear.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/magnific-popup.min.js"></script>
+      <script src="/static/assets/js/fancybox.min.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/meanmenu.min.js"></script>
+      <script src="/static/assets/js/nice-select.min.js"></script>
+      <script src="/static/assets/js/sticky-sidebar.min.js"></script>
+      <script src="/static/assets/js/wow.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/ajaxchimp.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+   </body>
+   <!-- Mirrored from Astral Assets.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:01 GMT -->
+</html>
